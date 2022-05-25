@@ -1,0 +1,35 @@
+{
+  "name": "chart.js-renderer",
+  "version": "0.0.1",
+  "description": "A chart.js svg outside browser render ",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/**/*.spec.js"
+    , "build" : "cd build/module; npm run build; cd -"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mediagoom/chart.js-renderer.git"
+  },
+  "keywords": [
+    "chart.js",
+    "render",
+    "svg",
+    "chart",
+    "server-side",
+    "test"
+  ],
+  "author": "aseduto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mediagoom/chart.js-renderer/issues"
+  },
+  "homepage": "https://github.com/mediagoom/chart.js-renderer#readme",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chart.js": "^2.9.4",
+    "eslint": "^8.16.0",
+    "eslint-plugin-import": "^2.26.0",
+    "mocha": "^10.0.0"
+  }
+}

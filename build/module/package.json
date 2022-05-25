@@ -1,0 +1,33 @@
+{
+  "name": "chart.js-node-ssr-example",
+  "version": "1.0.9",
+  "scripts": {
+    "build": "npm run build:wp:prod",
+    "build:wp:prod": "webpack-cli --mode=production --config webpack.config.js",
+    "build:wp:dev": "webpack-cli --mode=development --config webpack.config.js"
+  },
+  "engines": {
+    "node": ">=12.13.0"
+  },
+  "dependencies": {
+    "red-agate-svg-canvas": "^0.5.0",
+    "red-agate-util": "^0.5.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@types/chart.js": "^2.9.29",
+    "@types/node": "^14.14.16",
+    "babel-loader": "^8.2.2",
+    "source-map-loader": "^2.0.0",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.0"
+  },
+  "author": "shellyln",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shellyln/chart.js-node-ssr-example.git"
+  }
+}
