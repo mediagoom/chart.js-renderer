@@ -312,14 +312,14 @@
             }
         },
         "scales": {
-            "yAxes": [
+            "y": 
                 {
                     "ticks": {
                         "beginAtZero": false
                     }
                 }
-            ],
-            "xAxes": [
+            ,
+            "x": 
                 {
                     "type": "time",
                     "time": {
@@ -337,7 +337,7 @@
                         }
                     }
                 }
-            ]
+            
         },
         "elements": {
             "line": {

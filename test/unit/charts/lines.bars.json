@@ -123,25 +123,7 @@
             "intersect": false
         }
         , "scales": {
-            "yAxes": [
-                {
-                    "ticks": {
-                        "beginAtZero": true
-                        , "-max" : 100
-                    },
-                    "position": "left"
-                },
-                {
-                    "ticks": {
-                        "beginAtZero": true
-                    },
-                    "type": "linear",
-                    "display": true,
-                    "position": "right"
-                    , "gridLines" : { "display" : false }
-                }
-            ],
-            "xAxes": [
+            "x": 
                 {
                     "type": "time",
                     "time": {
@@ -158,8 +140,27 @@
                             "year": "YYYY"
                         }
                     }
+                },
+            "y-axis-0": {
+            
+                    "ticks": {
+                        "beginAtZero": true
+                        , "-max" : 100
+                    },
+                    "position": "left"
                 }
-            ]
+            , "y-axis-1": {
+                    "ticks": {
+                        "beginAtZero": true
+                    },
+                    "type": "linear",
+                    "display": true,
+                    "position": "right"
+                    , "gridLines" : { "display" : false }
+                }
+
+            
+            
         },
         "elements": {
             "line": {
