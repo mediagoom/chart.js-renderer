@@ -11,6 +11,8 @@ describe('Render Chart js', ()=>{
     const charts_dir = path.join(__dirname, './charts')
     const ls = fs.readdirSync(charts_dir);
 
+    
+
     ls.forEach( (dir) => {
 
         const rx = /\.js$/i;
@@ -59,6 +61,8 @@ describe('Render Chart js', ()=>{
                         expect(a[j]).to.be.eq(b[j], `${j} =>${a[j]}<====>${b[j]}<=`);
 
             });
+
+
 
         }
 
