@@ -329,11 +329,11 @@
                             "second": "h:mm:ss a",
                             "minute": "h:mm a",
                             "hour": "hA",
-                            "day": "MMM D YYYY",
+                            "day": "MMM d yyyy",
                             "week": "ll",
-                            "month": "MMM YYYY",
-                            "quarter": "[Q]Q - YYYY",
-                            "year": "YYYY"
+                            "month": "MMM yyyy",
+                            "quarter": "[Q]Q - yyyy",
+                            "year": "yyyy"
                         }
                     }
                 }

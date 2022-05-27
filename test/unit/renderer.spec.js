@@ -4,7 +4,7 @@ const expect   = require('chai').expect;
 const render = require('../../index');
 
 const chartjs = require('chart.js');
-const date_adapter = require('chartjs-adapter-moment');
+const date_adapter = require('chartjs-adapter-date-fns');
 
 const exp = require('constants');
 
