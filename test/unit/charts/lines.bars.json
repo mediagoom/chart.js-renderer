@@ -143,24 +143,16 @@
                 },
             "y-axis-0": {
             
-                    "ticks": {
-                        "beginAtZero": true
-                        , "-max" : 100
-                    },
-                    "position": "left"
+                  "position": "left"
                 }
             , "y-axis-1": {
-                    "ticks": {
-                        "beginAtZero": true
-                    },
-                    "type": "linear",
+                    "min" : 0
+                    , "type": "linear",
                     "display": true,
                     "position": "right"
-                    , "gridLines" : { "display" : false }
+                    , "grid" : { "display" : false }
                 }
 
-            
-            
         },
         "elements": {
             "line": {
