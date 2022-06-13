@@ -20,6 +20,9 @@ export default function(ChartJs, opts)
         },
     };
 
+    //TypeError: ctx.resetTransform is not a function
+    ctx.resetTransform = function(){}
+
     // SvgCanvas does not have font glyph information,
     // so manually set the ratio of (font height / font width).
     ctx.fontHeightRatio = 2;
