@@ -1,0 +1,314 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="800px" height="400px" viewBox="0 0 800 400">
+<defs>
+<clipPath id="clip-1" fill-rule="nonzero" ><path d="M 0,0 L 0,32 800,32 800,0 Z" /></clipPath>
+<clipPath id="clip-2" fill-rule="nonzero" ><path d="M 0,0 L 0,400 236,400 236,0 Z" /></clipPath>
+<clipPath id="clip-3" fill-rule="nonzero" ><path d="M 0,371.6 L 0,400 800,400 800,371.6 Z" /></clipPath>
+<clipPath id="clip-4" fill-rule="nonzero" ><path d="M 236,32 L 236,371.6 785,371.6 785,32 Z" /></clipPath>
+<clipPath id="clip-5" fill-rule="nonzero" ><path d="M 641.795082,35.657231 L 641.795082,54.465846 693,54.465846 693,35.657231 Z" /></clipPath>
+<clipPath id="clip-6" fill-rule="nonzero" ><path d="M 694,61.780308 L 694,80.588923 721.923725,80.588923 721.923725,61.780308 Z" /></clipPath>
+<clipPath id="clip-7" fill-rule="nonzero" ><path d="M 694,87.903385 L 694,106.712 708.601066,106.712 708.601066,87.903385 Z" /></clipPath>
+<clipPath id="clip-8" fill-rule="nonzero" ><path d="M 694,114.026462 L 694,132.835077 720.516764,132.835077 720.516764,114.026462 Z" /></clipPath>
+<clipPath id="clip-9" fill-rule="nonzero" ><path d="M 694,140.149538 L 694,158.958154 706.997351,158.958154 706.997351,140.149538 Z" /></clipPath>
+<clipPath id="clip-10" fill-rule="nonzero" ><path d="M 693.5,166.272615 L 693.5,185.081231 693.5,185.081231 693.5,166.272615 Z" /></clipPath>
+<clipPath id="clip-11" fill-rule="nonzero" ><path d="M 694,192.395692 L 694,211.204308 724.847455,211.204308 724.847455,192.395692 Z" /></clipPath>
+<clipPath id="clip-12" fill-rule="nonzero" ><path d="M 694,218.518769 L 694,237.327385 722.558039,237.327385 722.558039,218.518769 Z" /></clipPath>
+<clipPath id="clip-13" fill-rule="nonzero" ><path d="M 694,244.641846 L 694,263.450462 705.941963,263.450462 705.941963,244.641846 Z" /></clipPath>
+<clipPath id="clip-14" fill-rule="nonzero" ><path d="M 694,270.764923 L 694,289.573538 719.061724,289.573538 719.061724,270.764923 Z" /></clipPath>
+<clipPath id="clip-15" fill-rule="nonzero" ><path d="M 694,296.888 L 694,315.696615 742.201986,315.696615 742.201986,296.888 Z" /></clipPath>
+<clipPath id="clip-16" fill-rule="nonzero" ><path d="M 694,323.011077 L 694,341.819692 736.323488,341.819692 736.323488,323.011077 Z" /></clipPath>
+<clipPath id="clip-17" fill-rule="nonzero" ><path d="M 256.130739,349.134154 L 256.130739,367.942769 693,367.942769 693,349.134154 Z" /></clipPath></defs>
+<g stroke="none" fill="white" fill-rule="nonzero" fill-opacity="1" >
+<rect x="0" y="0" width="800" height="400" transform="matrix(1 0 0 1 0 0)" /></g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 237,31.5 L 785,31.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 228,31.5 L 236,31.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 237,58.5 L 785,58.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 228,58.5 L 236,58.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 237,84.5 L 785,84.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 228,84.5 L 236,84.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 237,110.5 L 785,110.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 228,110.5 L 236,110.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 237,136.5 L 785,136.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 228,136.5 L 236,136.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 237,162.5 L 785,162.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 228,162.5 L 236,162.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 237,188.5 L 785,188.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 228,188.5 L 236,188.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 237,214.5 L 785,214.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 228,214.5 L 236,214.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 237,240.5 L 785,240.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 228,240.5 L 236,240.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 237,267.5 L 785,267.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 228,267.5 L 236,267.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 237,293.5 L 785,293.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 228,293.5 L 236,293.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 237,319.5 L 785,319.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 228,319.5 L 236,319.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 237,345.5 L 785,345.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 228,345.5 L 236,345.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 237,371.5 L 785,371.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 228,371.5 L 236,371.5" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 236.5,32 L 236.5,371" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 236.5,372 L 236.5,379.6" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 327.5,32 L 327.5,371" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 327.5,372 L 327.5,379.6" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 419.5,32 L 419.5,371" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 419.5,372 L 419.5,379.6" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 510.5,32 L 510.5,371" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 510.5,372 L 510.5,379.6" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 602.5,32 L 602.5,371" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 602.5,372 L 602.5,379.6" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 693.5,32 L 693.5,371" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 693.5,372 L 693.5,379.6" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 785.5,32 L 785.5,371" />
+</g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 785.5,372 L 785.5,379.6" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="nonzero" fill-opacity="0.2"  clip-path="url(#clip-1)" >
+<path d="M 332,10 L 332,22 372,22 372,10 Z" />
+</g>
+<g stroke="rgb(33,150,243)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="1" fill="none" clip-path="url(#clip-1)" >
+<path d="M 332,10 L 332,22 372,22 372,10 Z" />
+</g>
+<g stroke="none" fill="#666" fill-rule="nonzero" fill-opacity="1"  clip-path="url(#clip-1)" >
+<text style="font:normal 12px &apos;Helvetica Neue&apos;, &apos;Helvetica&apos;, &apos;Arial&apos;, sans-serif;" text-anchor="start" dominant-baseline="middle" transform="matrix(1 0 0 1 0 0)" 
+><tspan x="378" y="16">core components</tspan></text></g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 236.5,32 L 236.5,372" />
+</g>
+<g stroke="none" fill="#666" fill-rule="nonzero" fill-opacity="1"  clip-path="url(#clip-2)" >
+<text style="font:normal 12px &apos;Helvetica Neue&apos;, &apos;Helvetica&apos;, &apos;Arial&apos;, sans-serif;" text-anchor="end" dominant-baseline="middle" transform="matrix(1 0 0 1 225 45.06153846153846)" 
+><tspan x="0" y="0">Apparel</tspan></text></g>
+<g stroke="none" fill="#666" fill-rule="nonzero" fill-opacity="1"  clip-path="url(#clip-2)" >
+<text style="font:normal 12px &apos;Helvetica Neue&apos;, &apos;Helvetica&apos;, &apos;Arial&apos;, sans-serif;" text-anchor="end" dominant-baseline="middle" transform="matrix(1 0 0 1 225 71.1846153846154)" 
+><tspan x="0" y="0">New vehicles</tspan></text></g>
+<g stroke="none" fill="#666" fill-rule="nonzero" fill-opacity="1"  clip-path="url(#clip-2)" >
+<text style="font:normal 12px &apos;Helvetica Neue&apos;, &apos;Helvetica&apos;, &apos;Arial&apos;, sans-serif;" text-anchor="end" dominant-baseline="middle" transform="matrix(1 0 0 1 225 97.30769230769232)" 
+><tspan x="0" y="0">Used cars and trucks</tspan></text></g>
+<g stroke="none" fill="#666" fill-rule="nonzero" fill-opacity="1"  clip-path="url(#clip-2)" >
+<text style="font:normal 12px &apos;Helvetica Neue&apos;, &apos;Helvetica&apos;, &apos;Arial&apos;, sans-serif;" text-anchor="end" dominant-baseline="middle" transform="matrix(1 0 0 1 225 123.43076923076923)" 
+><tspan x="0" y="0">Medical care commodities</tspan></text></g>
+<g stroke="none" fill="#666" fill-rule="nonzero" fill-opacity="1"  clip-path="url(#clip-2)" >
+<text style="font:normal 12px &apos;Helvetica Neue&apos;, &apos;Helvetica&apos;, &apos;Arial&apos;, sans-serif;" text-anchor="end" dominant-baseline="middle" transform="matrix(1 0 0 1 225 149.55384615384617)" 
+><tspan x="0" y="0">Alcoholic beverages</tspan></text></g>
+<g stroke="none" fill="#666" fill-rule="nonzero" fill-opacity="1"  clip-path="url(#clip-2)" >
+<text style="font:normal 12px &apos;Helvetica Neue&apos;, &apos;Helvetica&apos;, &apos;Arial&apos;, sans-serif;" text-anchor="end" dominant-baseline="middle" transform="matrix(1 0 0 1 225 175.6769230769231)" 
+><tspan x="0" y="0">Tobacco and smoking products</tspan></text></g>
+<g stroke="none" fill="#666" fill-rule="nonzero" fill-opacity="1"  clip-path="url(#clip-2)" >
+<text style="font:normal 12px &apos;Helvetica Neue&apos;, &apos;Helvetica&apos;, &apos;Arial&apos;, sans-serif;" text-anchor="end" dominant-baseline="middle" transform="matrix(1 0 0 1 225 201.8)" 
+><tspan x="0" y="0">Rent of primary residence</tspan></text></g>
+<g stroke="none" fill="#666" fill-rule="nonzero" fill-opacity="1"  clip-path="url(#clip-2)" >
+<text style="font:normal 12px &apos;Helvetica Neue&apos;, &apos;Helvetica&apos;, &apos;Arial&apos;, sans-serif;" text-anchor="end" dominant-baseline="middle" transform="matrix(1 0 0 1 225 227.9230769230769)" 
+><tspan x="0" y="0">Owners&apos; equivalent rent of residences</tspan></text></g>
+<g stroke="none" fill="#666" fill-rule="nonzero" fill-opacity="1"  clip-path="url(#clip-2)" >
+<text style="font:normal 12px &apos;Helvetica Neue&apos;, &apos;Helvetica&apos;, &apos;Arial&apos;, sans-serif;" text-anchor="end" dominant-baseline="middle" transform="matrix(1 0 0 1 225 254.04615384615386)" 
+><tspan x="0" y="0">Physicians&apos; services</tspan></text></g>
+<g stroke="none" fill="#666" fill-rule="nonzero" fill-opacity="1"  clip-path="url(#clip-2)" >
+<text style="font:normal 12px &apos;Helvetica Neue&apos;, &apos;Helvetica&apos;, &apos;Arial&apos;, sans-serif;" text-anchor="end" dominant-baseline="middle" transform="matrix(1 0 0 1 225 280.1692307692308)" 
+><tspan x="0" y="0">Hospital services</tspan></text></g>
+<g stroke="none" fill="#666" fill-rule="nonzero" fill-opacity="1"  clip-path="url(#clip-2)" >
+<text style="font:normal 12px &apos;Helvetica Neue&apos;, &apos;Helvetica&apos;, &apos;Arial&apos;, sans-serif;" text-anchor="end" dominant-baseline="middle" transform="matrix(1 0 0 1 225 306.2923076923077)" 
+><tspan x="0" y="0">Motor vehicle maintenance and repair</tspan></text></g>
+<g stroke="none" fill="#666" fill-rule="nonzero" fill-opacity="1"  clip-path="url(#clip-2)" >
+<text style="font:normal 12px &apos;Helvetica Neue&apos;, &apos;Helvetica&apos;, &apos;Arial&apos;, sans-serif;" text-anchor="end" dominant-baseline="middle" transform="matrix(1 0 0 1 225 332.4153846153846)" 
+><tspan x="0" y="0">Motor vehicle insurance</tspan></text></g>
+<g stroke="none" fill="#666" fill-rule="nonzero" fill-opacity="1"  clip-path="url(#clip-2)" >
+<text style="font:normal 12px &apos;Helvetica Neue&apos;, &apos;Helvetica&apos;, &apos;Arial&apos;, sans-serif;" text-anchor="end" dominant-baseline="middle" transform="matrix(1 0 0 1 225 358.53846153846155)" 
+><tspan x="0" y="0">Airline fares</tspan></text></g>
+<g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
+<path d="M 236,371.5 L 786,371.5" />
+</g>
+<g stroke="none" fill="#666" fill-rule="nonzero" fill-opacity="1"  clip-path="url(#clip-3)" >
+<text style="font:normal 12px &apos;Helvetica Neue&apos;, &apos;Helvetica&apos;, &apos;Arial&apos;, sans-serif;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 236 382.6)" 
+><tspan x="0" y="7.199999999999999">-0.10</tspan></text></g>
+<g stroke="none" fill="#666" fill-rule="nonzero" fill-opacity="1"  clip-path="url(#clip-3)" >
+<text style="font:normal 12px &apos;Helvetica Neue&apos;, &apos;Helvetica&apos;, &apos;Arial&apos;, sans-serif;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 327.5 382.6)" 
+><tspan x="0" y="7.199999999999999">-0.08</tspan></text></g>
+<g stroke="none" fill="#666" fill-rule="nonzero" fill-opacity="1"  clip-path="url(#clip-3)" >
+<text style="font:normal 12px &apos;Helvetica Neue&apos;, &apos;Helvetica&apos;, &apos;Arial&apos;, sans-serif;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 419 382.6)" 
+><tspan x="0" y="7.199999999999999">-0.06</tspan></text></g>
+<g stroke="none" fill="#666" fill-rule="nonzero" fill-opacity="1"  clip-path="url(#clip-3)" >
+<text style="font:normal 12px &apos;Helvetica Neue&apos;, &apos;Helvetica&apos;, &apos;Arial&apos;, sans-serif;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 510.5 382.6)" 
+><tspan x="0" y="7.199999999999999">-0.04</tspan></text></g>
+<g stroke="none" fill="#666" fill-rule="nonzero" fill-opacity="1"  clip-path="url(#clip-3)" >
+<text style="font:normal 12px &apos;Helvetica Neue&apos;, &apos;Helvetica&apos;, &apos;Arial&apos;, sans-serif;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 602 382.6)" 
+><tspan x="0" y="7.199999999999999">-0.02</tspan></text></g>
+<g stroke="none" fill="#666" fill-rule="nonzero" fill-opacity="1"  clip-path="url(#clip-3)" >
+<text style="font:normal 12px &apos;Helvetica Neue&apos;, &apos;Helvetica&apos;, &apos;Arial&apos;, sans-serif;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 693.5 382.6)" 
+><tspan x="0" y="7.199999999999999">0</tspan></text></g>
+<g stroke="none" fill="#666" fill-rule="nonzero" fill-opacity="1"  clip-path="url(#clip-3)" >
+<text style="font:normal 12px &apos;Helvetica Neue&apos;, &apos;Helvetica&apos;, &apos;Arial&apos;, sans-serif;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 785 382.6)" 
+><tspan x="0" y="7.199999999999999">0.02</tspan></text></g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="evenodd" fill-opacity="1"  clip-path="url(#clip-5)" >
+<path d="M 641.795082,35.657231 L 641.795082,54.465846 693,54.465846 693,35.657231 Z M 642.795082,36.657231 L 642.795082,53.465846
+693,53.465846 693,36.657231 Z" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="nonzero" fill-opacity="0.2"  clip-path="url(#clip-5)" >
+<path d="M 642.795082,36.657231 L 642.795082,53.465846 693,53.465846 693,36.657231 Z" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="evenodd" fill-opacity="1"  clip-path="url(#clip-6)" >
+<path d="M 694,61.780308 L 694,80.588923 721.923725,80.588923 721.923725,61.780308 Z M 694,62.780308 L 694,79.588923 720.923725,79.588923
+720.923725,62.780308 Z" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="nonzero" fill-opacity="0.2"  clip-path="url(#clip-6)" >
+<path d="M 694,62.780308 L 694,79.588923 720.923725,79.588923 720.923725,62.780308 Z" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="evenodd" fill-opacity="1"  clip-path="url(#clip-7)" >
+<path d="M 694,87.903385 L 694,106.712 708.601066,106.712 708.601066,87.903385 Z M 694,88.903385 L 694,105.712 707.601066,105.712
+707.601066,88.903385 Z" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="nonzero" fill-opacity="0.2"  clip-path="url(#clip-7)" >
+<path d="M 694,88.903385 L 694,105.712 707.601066,105.712 707.601066,88.903385 Z" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="evenodd" fill-opacity="1"  clip-path="url(#clip-8)" >
+<path d="M 694,114.026462 L 694,132.835077 720.516764,132.835077 720.516764,114.026462 Z M 694,115.026462 L 694,131.835077 719.516764,131.835077
+719.516764,115.026462 Z" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="nonzero" fill-opacity="0.2"  clip-path="url(#clip-8)" >
+<path d="M 694,115.026462 L 694,131.835077 719.516764,131.835077 719.516764,115.026462 Z" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="evenodd" fill-opacity="1"  clip-path="url(#clip-9)" >
+<path d="M 694,140.149538 L 694,158.958154 706.997351,158.958154 706.997351,140.149538 Z M 694,141.149538 L 694,157.958154 705.997351,157.958154
+705.997351,141.149538 Z" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="nonzero" fill-opacity="0.2"  clip-path="url(#clip-9)" >
+<path d="M 694,141.149538 L 694,157.958154 705.997351,157.958154 705.997351,141.149538 Z" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="evenodd" fill-opacity="1"  clip-path="url(#clip-10)" >
+<path d="M 693.5,166.272615 L 693.5,185.081231 693.5,185.081231 693.5,166.272615 Z M 693.5,167.272615 L 693.5,184.081231 693.5,184.081231
+693.5,167.272615 Z" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="nonzero" fill-opacity="0.2"  clip-path="url(#clip-10)" >
+<path d="M 693.5,167.272615 L 693.5,184.081231 693.5,184.081231 693.5,167.272615 Z" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="evenodd" fill-opacity="1"  clip-path="url(#clip-11)" >
+<path d="M 694,192.395692 L 694,211.204308 724.847455,211.204308 724.847455,192.395692 Z M 694,193.395692 L 694,210.204308 723.847455,210.204308
+723.847455,193.395692 Z" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="nonzero" fill-opacity="0.2"  clip-path="url(#clip-11)" >
+<path d="M 694,193.395692 L 694,210.204308 723.847455,210.204308 723.847455,193.395692 Z" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="evenodd" fill-opacity="1"  clip-path="url(#clip-12)" >
+<path d="M 694,218.518769 L 694,237.327385 722.558039,237.327385 722.558039,218.518769 Z M 694,219.518769 L 694,236.327385 721.558039,236.327385
+721.558039,219.518769 Z" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="nonzero" fill-opacity="0.2"  clip-path="url(#clip-12)" >
+<path d="M 694,219.518769 L 694,236.327385 721.558039,236.327385 721.558039,219.518769 Z" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="evenodd" fill-opacity="1"  clip-path="url(#clip-13)" >
+<path d="M 694,244.641846 L 694,263.450462 705.941963,263.450462 705.941963,244.641846 Z M 694,245.641846 L 694,262.450462 704.941963,262.450462
+704.941963,245.641846 Z" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="nonzero" fill-opacity="0.2"  clip-path="url(#clip-13)" >
+<path d="M 694,245.641846 L 694,262.450462 704.941963,262.450462 704.941963,245.641846 Z" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="evenodd" fill-opacity="1"  clip-path="url(#clip-14)" >
+<path d="M 694,270.764923 L 694,289.573538 719.061724,289.573538 719.061724,270.764923 Z M 694,271.764923 L 694,288.573538 718.061724,288.573538
+718.061724,271.764923 Z" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="nonzero" fill-opacity="0.2"  clip-path="url(#clip-14)" >
+<path d="M 694,271.764923 L 694,288.573538 718.061724,288.573538 718.061724,271.764923 Z" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="evenodd" fill-opacity="1"  clip-path="url(#clip-15)" >
+<path d="M 694,296.888 L 694,315.696615 742.201986,315.696615 742.201986,296.888 Z M 694,297.888 L 694,314.696615 741.201986,314.696615
+741.201986,297.888 Z" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="nonzero" fill-opacity="0.2"  clip-path="url(#clip-15)" >
+<path d="M 694,297.888 L 694,314.696615 741.201986,314.696615 741.201986,297.888 Z" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="evenodd" fill-opacity="1"  clip-path="url(#clip-16)" >
+<path d="M 694,323.011077 L 694,341.819692 736.323488,341.819692 736.323488,323.011077 Z M 694,324.011077 L 694,340.819692 735.323488,340.819692
+735.323488,324.011077 Z" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="nonzero" fill-opacity="0.2"  clip-path="url(#clip-16)" >
+<path d="M 694,324.011077 L 694,340.819692 735.323488,340.819692 735.323488,324.011077 Z" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="evenodd" fill-opacity="1"  clip-path="url(#clip-17)" >
+<path d="M 256.130739,349.134154 L 256.130739,367.942769 693,367.942769 693,349.134154 Z M 257.130739,350.134154 L 257.130739,366.942769
+693,366.942769 693,350.134154 Z" />
+</g>
+<g stroke="none" fill="rgb(33,150,243)" fill-rule="nonzero" fill-opacity="0.2"  clip-path="url(#clip-17)" >
+<path d="M 257.130739,350.134154 L 257.130739,366.942769 693,366.942769 693,350.134154 Z" />
+</g>
+</svg>

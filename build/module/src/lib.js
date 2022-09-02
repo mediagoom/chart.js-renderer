@@ -5,18 +5,23 @@ import { SvgCanvas,
 // tslint:disable-next-line:function-constructor
 const g = Function('return this')();
 
-export default function(ChartJs, opts)
+export default function(ChartJs, opts, width, height)
 {
+    if(undefined === width)
+            width = 800;
+    if(undefined === height)
+            height = 400;
+
     // SvgCanvas has a "CanvasRenderingContext2D"-compatible interface.
     const ctx = new SvgCanvas();
 
     // SvgCanvas lacks the canvas property.
     ctx.canvas = {
-        width: 800,
-        height: 400,
+        width,
+        height,
         style: {
-            width: '800px',
-            height: '400px',
+            width: `${width}px`,
+            height: `${height}400px`,
         },
     };
 
@@ -55,7 +60,7 @@ export default function(ChartJs, opts)
     }
 
     // Render as SVG.
-    const svgString = ctx.render(new Rect2D(0, 0 , 800, 400), 'px');
+    const svgString = ctx.render(new Rect2D(0, 0 , width, height), 'px');
     
     return svgString;
 }
