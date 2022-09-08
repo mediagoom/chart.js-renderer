@@ -203,4 +203,7 @@
     "type": "stackedbar",
     "start": "2020-09-01T22:00:00.000Z",
     "unit": "month"
+    , "template" : [{ "options" : {"plugins": {
+                "rectangle" : { "startY" : 0.085}
+            }}}]
 }

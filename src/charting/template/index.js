@@ -1,12 +1,26 @@
-const { assert } = require('chai');
 const merge = require('../../core/jsonmerge');
+const plugins = require('./plugin');
 
 
 const simple = {
-
-    horizontal : {
+    none : {}
+    , horizontal : {
         options: {
             indexAxis: 'y'
+        }
+    }
+    , 'zero-line' : {
+        options : {
+            plugins: {
+                'rectangle' : {}
+            }
+        }
+    }
+    , 'balanceX' : {
+        options : {
+            plugins: {
+                'balanceX' : true
+            }
         }
     }
 };
@@ -18,6 +32,11 @@ function resolve_template(template)
     {
         if(simple[template] !== undefined)
             return simple[template];
+    }
+
+    if(typeof template === 'object')
+    {
+        return template;
     }
 
     assert(false, 'cannot resolve template');
@@ -38,7 +57,7 @@ function apply_templates(object, templates)
 
     if(Array.isArray(templates))
     {
-        for(const template in templates)
+        for(const template of templates)
         {
             result = apply_template(result, template);
         }
@@ -48,6 +67,11 @@ function apply_templates(object, templates)
         
         result = apply_template(result, templates);
     }
+
+    if(result.plugins === undefined)
+        result.plugins = [];
+
+    result.plugins = result.plugins.concat(plugins);
 
     return result;
 }
