@@ -49,7 +49,7 @@ const rectangle = {
           ctx.restore();
         },
         defaults: {
-            color: 'Navy'
+            color: 'Gray'
             , startX : 0
             , startY : 0
             , endX  : 0
