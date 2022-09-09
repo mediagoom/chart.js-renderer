@@ -1,62 +1,38 @@
+const assert = require("assert");
 const balanceX = require("./balanceX");
+const rectangle = require("./rectangle");
 
-const rectangle = {
-        id: 'rectangle',
-        //beforeDraw(chart, args, options) {
-        afterDraw(chart, args, options) {
-          const {
-            ctx,
-            chartArea: { top, right, bottom, left, width, height },
-            scales: { x, y },
-          } = chart
-          ctx.save();
+const internal_plugin = { balanceX, rectangle};
 
-           let opt = JSON.parse(JSON.stringify(this.defaults));
+function call_plugins(event, chart, args, options)
+{
+    for(const internal in options)
+    {
+        const plugin = internal_plugin[internal];
 
-           Object.assign(opt, options);
+        assert(undefined !== plugin, `invalid internal plugin [${internal}]`);
 
-          let h = 1;
-          let w = width -1;
+        const opt = options[internal];
 
-          let xv = left + 1;
-          let yv = 0;
+        if(undefined !== plugin[event])
+            plugin[event].call(plugin, chart, args, opt);
+    }
+}
 
-          if(opt.reverse)
-          {
-             h = height - 1;
-             w = 1;
-             xy = 0;
-             yv = top + 1;
-          }
-
-          if(opt.startY !== 0)
-            yv = y.getPixelForValue(opt.startY);
-
-          if(opt.startX !== 0)
-            xv = x.getPixelForValue(opt.startX);
-
-          //if(options.endY !== 0)
-
-
-          // draw line
-          ctx.strokeStyle = opt.color;
-          // x0 : starting point on the horizontal line. Left to Right
-          // y0 : starting point on the vertical line. Top to Bottom
-          // x1 : length point on the horizontal line. Left to Right
-          // y1 : length point on the vertical line. Top to Bottom
-          ctx.strokeRect(xv, yv
-            , w
-            , h);
-
-          ctx.restore();
-        },
-        defaults: {
-            color: 'Navy'
-            , startX : 0
-            , startY : 0
-            , endX  : 0
-            , endY : 0
+const master = 
+{
+        id: 'master',
+        beforeDraw(chart, args, options) {
+            call_plugins('beforeDraw', chart, args, options);
         }
-      }
+        , afterDraw(chart, args, options) {
+          
+            call_plugins('afterDraw', chart, args, options);
+        }
+        , afterDataLimits(chart, args, options) {
+          
+            call_plugins('afterDataLimits', chart, args, options);
+        }
+}
 
-module.exports = [rectangle, balanceX];
+module.exports = [master];

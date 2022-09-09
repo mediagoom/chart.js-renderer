@@ -12,14 +12,14 @@ const simple = {
     , 'zero-line' : {
         options : {
             plugins: {
-                'rectangle' : {}
+                'master' : { 'rectangle' : {} }
             }
         }
     }
     , 'balanceX' : {
         options : {
             plugins: {
-                'balanceX' : true
+                'master' : { 'balanceX' : {} }
             }
         }
     }
@@ -36,6 +36,21 @@ function resolve_template(template)
 
     if(typeof template === 'object')
     {
+        if(template.kind !== undefined)
+        {
+            const opt = template.options;
+
+            const obj = {options : {
+                    plugins: {
+                        'master' : {  }
+                    }
+            }};
+
+            obj.options.plugins.master[template.kind] = opt;
+
+            return obj;
+        }
+
         return template;
     }
 

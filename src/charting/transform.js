@@ -88,8 +88,7 @@ module.exports = function(data_definition)
             , maintainAspectRatio: false
         
             ,plugins: {
-                rectangle : false, balanceX : false
-                , tooltip: {
+                tooltip: {
                     mode: 'interpolate'
                     , intersect: false
                 }
