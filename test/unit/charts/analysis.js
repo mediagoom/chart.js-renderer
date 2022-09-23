@@ -16,6 +16,7 @@ module.exports = {
             "backgroundColor": "rgba(33,150,243, 0.2)",
             "borderColor": "rgba(33,150,243, 1)",
             "borderWidth": 1,
+            //"borderDash": [5, 5],
             "yAxisID": "y-axis-0"
         }, {
             "fill": false,
