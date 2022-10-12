@@ -1,8 +1,9 @@
-const assert = require("assert");
-const balanceX = require("./balanceX");
-const rectangle = require("./rectangle");
+const assert = require('assert');
+const balanceX = require('./balanceX');
+const rectangle = require('./rectangle');
+const percentage = require('./percentage');
 
-const internal_plugin = { balanceX, rectangle};
+const internal_plugin = { balanceX, rectangle, percentage};
 
 function call_plugins(event, chart, args, options)
 {
@@ -21,18 +22,18 @@ function call_plugins(event, chart, args, options)
 
 const master = 
 {
-        id: 'master',
-        beforeDraw(chart, args, options) {
-            call_plugins('beforeDraw', chart, args, options);
-        }
-        , afterDraw(chart, args, options) {
+    id: 'master'
+    ,beforeDraw(chart, args, options) {
+        call_plugins('beforeDraw', chart, args, options);
+    }
+    , afterDraw(chart, args, options) {
           
-            call_plugins('afterDraw', chart, args, options);
-        }
-        , afterDataLimits(chart, args, options) {
+        call_plugins('afterDraw', chart, args, options);
+    }
+    , afterDataLimits(chart, args, options) {
           
-            call_plugins('afterDataLimits', chart, args, options);
-        }
-}
+        call_plugins('afterDataLimits', chart, args, options);
+    }
+};
 
 module.exports = [master];

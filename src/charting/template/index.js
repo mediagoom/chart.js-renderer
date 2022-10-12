@@ -1,3 +1,4 @@
+const assert = require('assert');
 const merge = require('../../core/jsonmerge');
 const plugins = require('./plugin');
 
@@ -22,8 +23,24 @@ const simple = {
                 'master' : { 'balanceX' : {} }
             }
         }
+    }, 'percentage' : {
+        options : {
+            scales : {
+                y : {
+                    ticks : { callback : function(val){
+
+                        const v = Math.round(val * 10000) / 100;
+
+                        return `[${v}%]`;
+                    }
+                    }
+                }
+            }            
+        }        
     }
+    
 };
+
 
 
 function resolve_template(template)
@@ -41,9 +58,9 @@ function resolve_template(template)
             const opt = template.options;
 
             const obj = {options : {
-                    plugins: {
-                        'master' : {  }
-                    }
+                plugins: {
+                    'master' : {  }
+                }
             }};
 
             obj.options.plugins.master[template.kind] = opt;

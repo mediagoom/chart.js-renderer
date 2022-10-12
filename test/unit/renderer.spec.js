@@ -10,7 +10,9 @@ const date_adapter = require('chartjs-adapter-date-fns');
 
 const exp = require('constants');
 
-describe('Render Chart js', ()=>{
+describe('Render Chart js', function(){
+
+    this.timeout(10000);
 
     const charts_dir = path.join(__dirname, './charts')
     const ls = fs.readdirSync(charts_dir);
@@ -42,7 +44,7 @@ describe('Render Chart js', ()=>{
                         opts = JSON.parse(content);
                         if(/\.transform\./.test(file)){
                             opts = transform(opts);
-                            fs.writeFileSync(path.join(__dirname, `./charts/tmp/${name}.transformed`), JSON.stringify(opts, null, 2));
+                            fs.writeFileSync(path.join(__dirname, `./charts/tmp/${name}.transformed.json`), JSON.stringify(opts, null, 2));
                         }
                     }
 

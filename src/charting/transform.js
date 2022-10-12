@@ -12,6 +12,7 @@ const default_dataset = {
 };
 
 const Y1 = 'y-axis-1';
+const L1 = 'y-axis-2';
 
 const TIME = 'timeseries';
 
@@ -213,6 +214,17 @@ module.exports = function(data_definition)
             }
 
             ds.yAxisID = Y1;
+        }
+
+        if('left1' === serie.position)
+        {
+            if(undefined === chart.options.scales[L1])
+            {
+                chart.options.scales[L1] = {position: 'left', grid : { display : false }};
+            }
+
+            ds.yAxisID = L1;
+
         }
 
             
