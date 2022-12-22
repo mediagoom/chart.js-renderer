@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const expect   = require('chai').expect;
-const render = require('../../index');
+const render = require('../../bin/lib').render.default;//require('../../index');
 
 const transform = require('../../src/charting/transform');
 
