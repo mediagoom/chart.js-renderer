@@ -1,5 +1,6 @@
 const render = require('./bin/lib').render.default;
 const chartjs = require('chart.js');
+const date_adapter = require('chartjs-adapter-date-fns');
 //module.exports = render.render.default
 
 function getInput() {
