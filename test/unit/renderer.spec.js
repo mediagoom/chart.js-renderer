@@ -1,19 +1,21 @@
 const fs = require('fs');
 const path = require('path');
 const expect   = require('chai').expect;
-const render = require('../../index');
+const render = require('../../bin/lib').render.default;//require('../../index');
+
+const transform = require('../../src/charting/transform');
 
 const chartjs = require('chart.js');
 const date_adapter = require('chartjs-adapter-date-fns');
 
 const exp = require('constants');
 
-describe('Render Chart js', ()=>{
+describe('Render Chart js', function(){
+
+    this.timeout(10000);
 
     const charts_dir = path.join(__dirname, './charts')
     const ls = fs.readdirSync(charts_dir);
-
-    
 
     ls.forEach( (dir) => {
 
@@ -31,7 +33,6 @@ describe('Render Chart js', ()=>{
             it(`should render ${name}`, ()=>{
 
                     //console.log(name, file, charts_dir);
-
                     if(js)
                     { 
                         opts = require(file);
@@ -39,7 +40,12 @@ describe('Render Chart js', ()=>{
                     }
                     else
                     {
-                        opts = JSON.parse(fs.readFileSync(file).toString());
+                        const content = fs.readFileSync(file).toString();
+                        opts = JSON.parse(content);
+                        if(/\.transform\./.test(file)){
+                            opts = transform(opts);
+                            fs.writeFileSync(path.join(__dirname, `./charts/tmp/${name}.transformed.json`), JSON.stringify(opts, null, 2));
+                        }
                     }
 
                     //opts.options.datasets = {line : { pointStyle : 'line' , fill: true } };

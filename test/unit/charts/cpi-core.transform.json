@@ -1,0 +1,71 @@
+{
+    "kind": "label",
+    "series": [
+        {
+            "data": [
+                {
+                    "x": "Apparel",
+                    "y": -0.011301621399631947
+                },
+                {
+                    "x": "New vehicles",
+                    "y": 0.006212835997357243
+                },
+                {
+                    "x": "Used cars and trucks",
+                    "y": 0.003300779415907611
+                },
+                {
+                    "x": "Medical care commodities",
+                    "y": 0.005905303684754828
+                },
+                {
+                    "x": "Alcoholic beverages",
+                    "y": 0.002950240735257082
+                },
+                {
+                    "x": "Tobacco and smoking products",
+                    "y": 0
+                },
+                {
+                    "x": "Rent of primary residence",
+                    "y": 0.006851902687217731
+                },
+                {
+                    "x": "Owners' equivalent rent of residences",
+                    "y": 0.006351483859530568
+                },
+                {
+                    "x": "Physicians' services",
+                    "y": 0.0027195547429083866
+                },
+                {
+                    "x": "Hospital services",
+                    "y": 0.005587262001822553
+                },
+                {
+                    "x": "Motor vehicle maintenance and repair",
+                    "y": 0.010645242870333898
+                },
+                {
+                    "x": "Motor vehicle insurance",
+                    "y": 0.009360325334640356
+                },
+                {
+                    "x": "Airline fares",
+                    "y": -0.09559983841953384
+                }
+            ],
+            "chart": {
+                "label": "core components"
+            }
+        }
+    ],
+    "type": "bar",
+    "start": "2021-08-30T22:00:00.000Z",
+    "unit": "month"
+
+    , "template" : ["horizontal", "balanceX", { "kind" : "rectangle", 
+                "options" : { "startX" : 0.005, "reverse" : true}
+            }]
+}
