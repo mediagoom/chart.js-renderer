@@ -5,7 +5,7 @@ const render = require('../../bin/lib').render.default;//require('../../index');
 
 const transform = require('../../src/charting/transform');
 
-const chartjs = require('chart.js');
+const chartjs = require('chart.js/auto');
 const date_adapter = require('chartjs-adapter-date-fns');
 
 const exp = require('constants');
