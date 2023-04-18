@@ -23,7 +23,7 @@
                 "999999",
                 "--colors",
                 "${file}"
-                //, "-g", "BalanceSheet"
+                , "-g", "sentiment.transform"
             ],
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen"

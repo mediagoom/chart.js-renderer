@@ -3,7 +3,7 @@ const trace = require('../../../core/trace')('XBRL:CHARTING:RECTANGLE', true);
 const rectangle = {
     id: 'rectangle'
     //beforeDraw(chart, args, options) {
-    ,afterDraw(chart, args, options) {
+    , afterDraw(chart, args, options) {
         const {
             ctx,
             chartArea: { top, right, bottom, left, width, height },
@@ -40,6 +40,7 @@ const rectangle = {
 
         //if(options.endY !== 0)
 
+        trace.info('rectangle', yv, opt.startY, xv, opt.startX);
 
         // draw line
         ctx.strokeStyle = opt.color;

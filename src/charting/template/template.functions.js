@@ -1,9 +1,12 @@
-
+const trace = require('../../core/trace')('XBRL:CHARTING:TEMPLATE:FUNCTION', true);
 
 
 module.exports = {
+    'recession' : function(/*data, args*/)
+    {
+    }
 
-    'rectangle-reverse' : function(data, args)
+    , 'rectangle-reverse' : function(data, args)
     {
 
         let back = 1;
@@ -30,9 +33,13 @@ module.exports = {
         if(xs.length < back)
             back = xs.length;
 
+        trace.info('rectangle-reverse', xs.length, back, JSON.stringify(args));
+
         //const val = xs[xs.length - back].y;
         const point = xs[xs.length - back];
         const val = point.y;
+
+        trace.info('rectangle-reverse', xs.length, back, val, JSON.stringify(args));
 
         const month = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
