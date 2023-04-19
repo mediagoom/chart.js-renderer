@@ -9,6 +9,6 @@ FULL="$(readlink -e $D)"
 echo "$FULL"
 
 cp ./transform.js "$FULL" 
-#cp ./template "$FULL" ./ -r
+cp ./template "$FULL" -r
 
 cd -
