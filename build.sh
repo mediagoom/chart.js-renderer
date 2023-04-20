@@ -37,7 +37,10 @@ npm run cov-lcov
 
 #chartjs-plugin-crosshair" refer to chart.js 3.4
 npm i --legacy-peer-deps 
+cd build/module; npm i; cd -
 npm run build
 test "test-result"
+
+ls -l ./coverage
 
 tar -czvf ./build.tar.gz ./* || true
