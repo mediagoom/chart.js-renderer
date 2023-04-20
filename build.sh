@@ -39,6 +39,7 @@ npm run cov-lcov
 npm i --legacy-peer-deps 
 cd build/module; npm i; cd -
 npm run build
+mkdir -p ./test/unit/charts/tmp
 test "test-result"
 
 ls -l ./coverage
