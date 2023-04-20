@@ -27,10 +27,10 @@ function test()
 {
 
 export DEBUG=*:warning,*:error
-npm test
 mkdir -p ./coverage
-npm test --silent -- --reporter json > ./coverage/$1.json
+npm test --silent --reporter json --reporter-option output=./coverage/$1.json || true
 npm run cov-test || true
+npm test || true
 npm run cov-lcov
 
 }
@@ -41,7 +41,5 @@ cd build/module; npm i; cd -
 npm run build
 mkdir -p ./test/unit/charts/tmp
 test "test-result"
-
-ls -l ./coverage
 
 tar -czvf ./build.tar.gz ./* || true
