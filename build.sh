@@ -41,4 +41,5 @@ npm run build
 mkdir -p ./test/unit/charts/tmp
 test "test-result"
 
-tar -czvf ./build.tar.gz ./* || true
+tar -czvf ./coverage.tar.gz ./coverage || true
+tar -czvf ./charts.tar.gz ././test/unit/charts || true

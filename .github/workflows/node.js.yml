@@ -47,3 +47,10 @@ jobs:
         with:
           files: |
             ./coverage/test-result.json
+
+      - uses: actions/upload-artifact@v3 #2
+        with:
+          path: |
+            coverage.tar.gz
+            charts.tar.gz
+          name: tars
