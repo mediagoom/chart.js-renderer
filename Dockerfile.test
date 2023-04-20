@@ -1,0 +1,16 @@
+#docker build -f Dockerfile.test 
+#docker build -f Dockerfile.test -t chartjs-renderer:test . 
+#docker buildx build -f Dockerfile.test -t chartjs-renderer:test --output coverage .
+
+FROM node:alpine as tester
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+COPY . /usr/src/app/
+
+RUN apk update && apk add bash && ls -l
+RUN chmod +x build.sh 
+
+RUN ./build.sh
+
+FROM scratch as custom-exporter
+COPY --from=tester /usr/src/app/coverage .

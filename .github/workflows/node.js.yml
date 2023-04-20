@@ -25,7 +25,7 @@ jobs:
       - name: build
         env:
           mykey : pippo
-        run: ./build.sh
+        run: docker buildx build -f Dockerfile.test -t chartjs-renderer:test --output coverage .
 
       - uses: actions/upload-artifact@v3 #2
         with:
