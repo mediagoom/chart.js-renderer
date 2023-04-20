@@ -41,6 +41,7 @@ jobs:
           echo Add other actions to build,
           printenv
           ls -l ./coverage
+          node --version
 
       - name: Publish Coverage Results
         uses: romeovs/lcov-reporter-action@v0.2.16
