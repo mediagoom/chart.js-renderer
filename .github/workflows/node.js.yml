@@ -25,19 +25,17 @@ jobs:
       - name: build
         env:
           mykey : pippo
-        run: docker buildx build -f Dockerfile.test -t chartjs-renderer:test --output coverage .
-
-      - uses: actions/upload-artifact@v3 #2
-        with:
-          path: coverage.tar.gz
-          name: coverage
+        run: ./build.sh
+        #run: docker buildx build -f Dockerfile.test -t chartjs-renderer:test --output coverage .
 
       - name: Publish charts
         uses: actions/upload-artifact@v3 #2
         if: always()
         with:
-          path: charts.tar.gz
-          name: charts
+          path: |
+            charts.tar.gz
+            coverage.tar.gz
+          name: coverage
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
@@ -45,6 +43,7 @@ jobs:
         run: |
           printenv
           node --version
+          uname --all
 
       #- name: Publish Coverage Results
       #  uses: romeovs/lcov-reporter-action@v0.2.16
