@@ -5,6 +5,84 @@ const plugins = require('./plugin');
 
 const simple = {
     none : {}
+    , '${template}' : {}
+    , '${template1}' : {}
+    , '${template2}' : {}
+    , basic : {
+        options : { scales : {}
+            , elements: {
+                'line': {
+                    'tension': 0
+                }
+                ,'point': {
+                    'radius': 1
+                }
+            }
+
+            , responsive: true
+            , maintainAspectRatio: false
+
+            , plugins: {
+                tooltip: {
+                    /*mode: 'interpolate'
+                    , intersect: false
+                    */
+                }
+
+                , crosshair : false
+                    
+            }
+        }
+        
+    }
+    , crosshair : {
+        options : { 
+            interaction : {  mode: 'interpolate' }
+            , plugins : {
+                tooltip: {
+                    intersect: false
+                    
+                }
+                , crosshair: {
+                    line: {
+                        color: '#161916'        // crosshair line color
+                        ,width: 1             // crosshair line width
+                        ,dashPattern: [2, 2]   // crosshair line dash pattern
+                    }
+                    ,sync: {
+                        enabled: false            // enable trace line syncing with other charts
+                        ,group: 1                 // chart group
+                        ,suppressTooltips: false   // suppress tooltips when showing a synced tracer
+                    }
+                    ,zoom: {
+                        enabled: false                                      // enable zooming
+                        ,zoomboxBackgroundColor: 'rgba(66,133,244,0.2)'     // background color of zoom box 
+                        ,zoomboxBorderColor: '#48F'                         // border color of zoom box
+                        ,zoomButtonText: 'Reset Zoom'                       // reset zoom button text
+                        ,zoomButtonClass: 'reset-zoom',                      // reset zoom button class
+                    }
+                    ,callbacks: {
+                        beforeZoom: function(/*start, end*/) {                  // called before zoom, return false to prevent zoom
+                            return true;
+                        }
+                        ,afterZoom: function(/*start, end*/) {                   // called after zoom
+                        }
+                    }
+                }
+            }
+        }
+    }
+    , nopoint :  {
+        
+        options : { 
+            elements: {
+                point: {
+                    radius: 0
+                }
+            }
+            
+        }
+    }
     , horizontal : {
         options: {
             indexAxis: 'y'
@@ -78,7 +156,7 @@ function resolve_template(template)
 function apply_template(object, template)
 {
     const t = resolve_template(template);
-    return merge(object, t);
+    return merge(object, JSON.parse(JSON.stringify(t)));
 }
 
 
