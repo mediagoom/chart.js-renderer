@@ -29,10 +29,15 @@ jobs:
 
       - uses: actions/upload-artifact@v3 #2
         with:
-          path: |
-            coverage.tar.gz
-            charts.tar.gz
-          name: tars
+          path: coverage.tar.gz
+          name: coverage
+
+      - name: Publish charts
+        uses: actions/upload-artifact@v3 #2
+        if: always()
+        with:
+          path: charts.tar.gz
+          name: charts
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script

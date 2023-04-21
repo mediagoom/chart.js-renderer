@@ -57,16 +57,16 @@ describe('Render Chart js', function(){
                     const svg_original = path.join(charts_dir, `${name}.svg`);
 
                     const target = fs.readFileSync(svg_original).toString().replace(/\n/g, '');
-          
-                    //expect(svg).to.be.eq(target);
-                    
+           
                     const a = svg.replace(/\n/g, '').split('>');
                     const b = target.split('>');
 
                     expect(a.length).to.be.eq(b.length);
 
                     for(let j = 0; j < a.length; j++)
-                        expect(a[j]).to.be.eq(b[j], `${j} =>${a[j]}<====>${b[j]}<=`);
+                        expect(a[j]).to.be.eq(b[j], `${j}]>> ${a[j]}
+${j}]<< ${b[j]}
+`);
 
             });
 

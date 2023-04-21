@@ -29,6 +29,7 @@ function test()
 export DEBUG=*:warning,*:error
 mkdir -p ./coverage
 npm test -- --reporter json --reporter-option output=./coverage/$1.json || true
+tar -czvf ./charts.tar.gz ././test/unit/charts || true
 npm run cov-test
 npm run cov-lcov
 
@@ -41,6 +42,6 @@ npm run build
 mkdir -p ./test/unit/charts/tmp
 test "test-result"
 
-tar -czvf ./charts.tar.gz ././test/unit/charts || true
+
 cp ./charts.tar.gz ./coverage || true
 tar -czvf ./coverage.tar.gz ./coverage || true
