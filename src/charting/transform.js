@@ -1,3 +1,4 @@
+const assert = require('assert');
 const template = require('./template');
 
 
@@ -57,6 +58,35 @@ for(const color of colors)
 
 }
 
+const default_palette = {colors, borders};
+
+const palettes = {};
+
+function get_palette(obj)
+{
+    if(undefined === obj)
+        return default_palette;
+
+    if(typeof obj === 'object')
+        return obj;
+
+    const p = palettes[obj];
+
+    if(undefined === p)
+        throw new Error(`Invalid palette ${obj.toString()}`);
+
+    return p;
+}
+
+function roll(arr, idx)
+{
+    const x = idx % arr.length;
+
+    assert(x < arr.length);
+
+    return arr[x];
+}
+
 function format_data(arr, kind)
 {
     if(TIME === kind)
@@ -82,6 +112,8 @@ module.exports = function(data_definition)
     let stacked = false;
     let max = data_definition.max;
     let min = data_definition.min;
+
+    const palette = get_palette(data_definition.palette);
 
     if(data_definition.type)
     {
@@ -198,9 +230,11 @@ module.exports = function(data_definition)
             ds.yAxisID = R1;
         }
 
-            
-        ds.backgroundColor = colors[idx];
-        ds.borderColor = borders[idx++];
+        ////////////////////////////////
+        /// COLORS
+        ////////////////////////////////
+        ds.backgroundColor = roll(palette.colors, idx);
+        ds.borderColor = roll((undefined === palette.borders)?palette.colors:palette.borders, idx++);
 
         if(serie.chart)
         {
@@ -225,7 +259,9 @@ module.exports = function(data_definition)
     }
     //}
 
-    let templates = 'basic';
+    let templates = ['basic' 
+        , 'crosshair'
+    ];
 
     if(data_definition.template)
     {
