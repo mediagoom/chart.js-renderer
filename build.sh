@@ -29,7 +29,7 @@ function test()
 export DEBUG=*:warning,*:error
 mkdir -p ./coverage
 npm test -- --reporter json --reporter-option output=./coverage/$1.json || true
-npm run cov-test || true
+npm run cov-test
 npm run cov-lcov
 
 }

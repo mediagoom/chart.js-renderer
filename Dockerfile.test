@@ -4,12 +4,9 @@
 #docker run -ti --name renderer chartjs-renderer:test
 
 FROM archlinux:latest as tester
-#RUN pacman -Syu
 RUN pacman -Syyu --noconfirm \
     && pacman -S --noconfirm openssl curl \
     && mkdir /usr/local/nvm 
-
-#RUN ln -s libssl.so.3 libssl.so && ldconfig
 
 ENV NVM_DIR /usr/local/nvm
 ENV NODE_VERSION 16.13.2
