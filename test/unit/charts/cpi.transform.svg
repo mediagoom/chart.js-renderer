@@ -576,5 +576,5 @@
 <path d="M 728.534629,217.175937 L 728.534629,371.1 776.552685,371.1 776.552685,217.175937 Z" />
 </g>
 <g stroke="Gray" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="1" fill="none">
-<rect x="-32768" y="82.94000000000001" width="1" height="338.6" transform="matrix(1 0 0 1 0 0)" /></g>
+<rect x="39" y="82.94000000000001" width="752" height="1" transform="matrix(1 0 0 1 0 0)" /></g>
 </svg>
