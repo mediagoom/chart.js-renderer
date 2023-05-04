@@ -14,8 +14,7 @@
 <clipPath id="clip-12" fill-rule="nonzero" ><path d="M 579.479044,60.3 L 579.479044,371.6 628.402489,371.6 628.402489,60.3 Z" /></clipPath>
 <clipPath id="clip-13" fill-rule="nonzero" ><path d="M 647.428273,43.32 L 647.428273,371.6 696.351717,371.6 696.351717,43.32 Z" /></clipPath>
 <clipPath id="clip-14" fill-rule="nonzero" ><path d="M 21,27 L 21,376.6 779,376.6 779,27 Z" /></clipPath></defs>
-<g stroke="none" fill="white" fill-rule="nonzero" fill-opacity="1" >
-<rect x="0" y="0" width="800" height="400" transform="matrix(1 0 0 1 0 0)" /></g>
+
 <g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
 <path d="M 26.5,32 L 26.5,371" />
 </g>

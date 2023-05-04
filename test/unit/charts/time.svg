@@ -5,8 +5,7 @@
 <clipPath id="clip-3" fill-rule="nonzero" ><path d="M 0,326.184925 L 0,400 800,400 800,326.184925 Z" /></clipPath>
 <clipPath id="clip-4" fill-rule="nonzero" ><path d="M 44.161393,31 L 44.161393,327.184925 796,327.184925 796,31 Z" /></clipPath>
 <clipPath id="clip-5" fill-rule="nonzero" ><path d="M 40.161393,27 L 40.161393,331.184925 800,331.184925 800,27 Z" /></clipPath></defs>
-<g stroke="none" fill="white" fill-rule="nonzero" fill-opacity="1" >
-<rect x="0" y="0" width="800" height="400" transform="matrix(1 0 0 1 0 0)" /></g>
+
 <g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
 <path d="M 46,326.5 L 795,326.5" />
 </g>

@@ -37,8 +37,7 @@
 <clipPath id="clip-35" fill-rule="nonzero" ><path d="M 576.190313,211.43415 L 576.190313,371.1 626.208369,371.1 626.208369,211.43415 Z" /></clipPath>
 <clipPath id="clip-36" fill-rule="nonzero" ><path d="M 653.102998,215.044111 L 653.102998,371.1 703.121054,371.1 703.121054,215.044111 Z" /></clipPath>
 <clipPath id="clip-37" fill-rule="nonzero" ><path d="M 727.534629,216.175937 L 727.534629,371.1 777.552685,371.1 777.552685,216.175937 Z" /></clipPath></defs>
-<g stroke="none" fill="white" fill-rule="nonzero" fill-opacity="1" >
-<rect x="0" y="0" width="800" height="400" transform="matrix(1 0 0 1 0 0)" /></g>
+
 <g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
 <path d="M 39,371.5 L 791,371.5" />
 </g>
