@@ -21,7 +21,7 @@ export default function(ChartJs, opts, width, height)
         height,
         style: {
             width: `${width}px`,
-            height: `${height}400px`,
+            height: `${height}px`,
         },
     };
 
@@ -60,7 +60,10 @@ export default function(ChartJs, opts, width, height)
     }
 
     // Render as SVG.
-    const svgString = ctx.render(new Rect2D(0, 0 , width, height), 'px');
+    let svgString = ctx.render(new Rect2D(0, 0 , width, height), 'px');
+
+    svgString = svgString.replace(`<g stroke="none" fill="white" fill-rule="nonzero" fill-opacity="1" >\n<rect x="0" y="0" width="${width}" height="${height}" transform="matrix(1 0 0 1 0 0)" /></g>`,'');
+
     
     return svgString;
 }

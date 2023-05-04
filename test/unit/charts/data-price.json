@@ -19747,7 +19747,7 @@
       }
     },
     "scales": {
-      "y-axis-0": {},
+      
       "x": {
         "type": "time",
         "time": {
