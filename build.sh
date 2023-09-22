@@ -45,3 +45,4 @@ test "test-result"
 
 cp ./charts.tar.gz ./coverage || true
 tar -czvf ./coverage.tar.gz ./coverage || true
+date || true
