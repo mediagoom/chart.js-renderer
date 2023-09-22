@@ -1,7 +1,7 @@
 #docker build -f Dockerfile.test 
 #docker build -f Dockerfile.test -t chartjs-renderer:test . 
 #docker buildx build -f Dockerfile.test -t chartjs-renderer:test --output coverage .
-#docker run -ti --name renderer chartjs-renderer:test
+#docker run -e TZ=UTC -ti --name renderer chartjs-renderer:test
 
 FROM archlinux:latest as tester
 RUN pacman -Syyu --noconfirm \
