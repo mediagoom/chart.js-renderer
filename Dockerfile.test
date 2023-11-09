@@ -1,0 +1,33 @@
+#docker build -f Dockerfile.test 
+#docker build -f Dockerfile.test -t chartjs-renderer:test . 
+#docker buildx build -f Dockerfile.test -t chartjs-renderer:test --output coverage .
+#docker run -e TZ=UTC -ti --name renderer chartjs-renderer:test
+
+FROM archlinux:latest as tester
+RUN pacman -Syyu --noconfirm \
+    && pacman -S --noconfirm openssl curl \
+    && mkdir /usr/local/nvm 
+
+ENV NVM_DIR /usr/local/nvm
+ENV NODE_VERSION 16.13.2
+
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash \
+    && . $NVM_DIR/nvm.sh \
+    && nvm install $NODE_VERSION \
+    && nvm alias default $NODE_VERSION \
+    && nvm use default \
+    && nvm ls
+
+ENV NODE_PATH $NVM_DIR/versions/node/v$NODE_VERSION/lib/node_modules
+ENV PATH      $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
+
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+COPY . /usr/src/app/
+
+RUN chmod +x build.sh 
+
+RUN ./build.sh
+
+FROM scratch as custom-exporter
+COPY --from=tester /usr/src/app/coverage .

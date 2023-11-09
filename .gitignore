@@ -1,2 +1,7 @@
 node_modules/
 __*
+scoverage.lcov
+
+coverage/
+.nyc_output/
+*.tar.gz

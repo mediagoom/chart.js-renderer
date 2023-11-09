@@ -37,8 +37,7 @@
 <clipPath id="clip-35" fill-rule="nonzero" ><path d="M 577.445499,211.43415 L 577.445499,371.1 627.460122,371.1 627.460122,211.43415 Z" /></clipPath>
 <clipPath id="clip-36" fill-rule="nonzero" ><path d="M 654.352905,215.044111 L 654.352905,371.1 704.367528,371.1 704.367528,215.044111 Z" /></clipPath>
 <clipPath id="clip-37" fill-rule="nonzero" ><path d="M 728.779428,216.175937 L 728.779428,371.1 778.79405,371.1 778.79405,216.175937 Z" /></clipPath></defs>
-<g stroke="none" fill="white" fill-rule="nonzero" fill-opacity="1" >
-<rect x="0" y="0" width="800" height="400" transform="matrix(1 0 0 1 0 0)" /></g>
+
 <g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
 <path d="M 39,371.5 L 791,371.5" />
 </g>
@@ -590,4 +589,6 @@
 <g stroke="none" fill="rgb(33,150,243)" fill-rule="nonzero" fill-opacity="0.2"  clip-path="url(#clip-37)" >
 <path d="M 729.779428,217.175937 L 729.779428,371.1 777.79405,371.1 777.79405,217.175937 Z" />
 </g>
+<g stroke="Gray" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="1" fill="none">
+<rect x="39" y="82.94000000000001" width="752" height="1" transform="matrix(1 0 0 1 0 0)" /></g>
 </svg>

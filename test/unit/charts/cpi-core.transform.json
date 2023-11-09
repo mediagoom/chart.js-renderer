@@ -65,7 +65,7 @@
     "start": "2021-08-30T22:00:00.000Z",
     "unit": "month"
 
-    , "template" : ["horizontal", "balanceX", { "options" : {"plugins": {
-                "rectangle" : { "startX" : 0.005, "reverse" : true, "color": "Gray"}
-            }}}]
+    , "template" : ["basic", "horizontal", "balanceX", { "kind" : "rectangle", 
+                "options" : { "startX" : 0.005, "reverse" : true}
+            }]
 }

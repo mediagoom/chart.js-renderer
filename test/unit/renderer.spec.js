@@ -1,16 +1,18 @@
 const fs = require('fs');
 const path = require('path');
 const expect   = require('chai').expect;
-const render = require('../../index');
+const render = require('../../bin/lib').render.default;//require('../../index');
 
 const transform = require('../../src/charting/transform');
 
-const chartjs = require('chart.js');
-const date_adapter = require('chartjs-adapter-date-fns');
+const chartjs = require('chart.js/auto');
+const date_adapter = require('chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns');
 
 const exp = require('constants');
 
-describe('Render Chart js', ()=>{
+describe('Render Chart js', function(){
+
+    this.timeout(10000);
 
     const charts_dir = path.join(__dirname, './charts')
     const ls = fs.readdirSync(charts_dir);
@@ -42,7 +44,7 @@ describe('Render Chart js', ()=>{
                         opts = JSON.parse(content);
                         if(/\.transform\./.test(file)){
                             opts = transform(opts);
-                            fs.writeFileSync(path.join(__dirname, `./charts/tmp/${name}.transformed`), JSON.stringify(opts, null, 2));
+                            fs.writeFileSync(path.join(__dirname, `./charts/tmp/${name}.transformed.json`), JSON.stringify(opts, null, 2));
                         }
                     }
 
@@ -55,16 +57,16 @@ describe('Render Chart js', ()=>{
                     const svg_original = path.join(charts_dir, `${name}.svg`);
 
                     const target = fs.readFileSync(svg_original).toString().replace(/\n/g, '');
-          
-                    //expect(svg).to.be.eq(target);
-                    
+           
                     const a = svg.replace(/\n/g, '').split('>');
                     const b = target.split('>');
 
                     expect(a.length).to.be.eq(b.length);
 
                     for(let j = 0; j < a.length; j++)
-                        expect(a[j]).to.be.eq(b[j], `${j} =>${a[j]}<====>${b[j]}<=`);
+                        expect(a[j]).to.be.eq(b[j], `${j}]>> ${a[j]}
+${j}]<< ${b[j]}
+`);
 
             });
 

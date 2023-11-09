@@ -1,3 +1,4 @@
+const assert = require('assert');
 const template = require('./template');
 
 
@@ -12,6 +13,8 @@ const default_dataset = {
 };
 
 const Y1 = 'y-axis-1';
+const L1 = 'y-axis-2';
+const R1 = 'y-axis-3';
 
 const TIME = 'timeseries';
 
@@ -55,6 +58,35 @@ for(const color of colors)
 
 }
 
+const default_palette = {colors, borders};
+
+const palettes = {};
+
+function get_palette(obj)
+{
+    if(undefined === obj)
+        return default_palette;
+
+    if(typeof obj === 'object')
+        return obj;
+
+    const p = palettes[obj];
+
+    if(undefined === p)
+        throw new Error(`Invalid palette ${obj.toString()}`);
+
+    return p;
+}
+
+function roll(arr, idx)
+{
+    const x = idx % arr.length;
+
+    assert(x < arr.length);
+
+    return arr[x];
+}
+
 function format_data(arr, kind)
 {
     if(TIME === kind)
@@ -74,59 +106,14 @@ module.exports = function(data_definition)
         , data: {
             datasets : []
         }
-        , options : { scales : {}
-            , elements: {
-                'line': {
-                    'tension': 0
-                }
-                ,'point': {
-                    'radius': 1
-                }
-            }
-
-            , responsive: true
-            , maintainAspectRatio: false
-        
-            ,plugins: {
-                rectangle : false, balanceX : false
-                , tooltip: {
-                    mode: 'interpolate'
-                    , intersect: false
-                }
-                , crosshair: {
-                    line: {
-                        color: '#161916'        // crosshair line color
-                        ,width: 1             // crosshair line width
-                        ,dashPattern: [2, 2]   // crosshair line dash pattern
-                    }
-                    ,sync: {
-                        enabled: false            // enable trace line syncing with other charts
-                        ,group: 1                 // chart group
-                        ,suppressTooltips: false   // suppress tooltips when showing a synced tracer
-                    }
-                    ,zoom: {
-                        enabled: false                                      // enable zooming
-                        ,zoomboxBackgroundColor: 'rgba(66,133,244,0.2)'     // background color of zoom box 
-                        ,zoomboxBorderColor: '#48F'                         // border color of zoom box
-                        ,zoomButtonText: 'Reset Zoom'                       // reset zoom button text
-                        ,zoomButtonClass: 'reset-zoom',                      // reset zoom button class
-                    }
-                    ,callbacks: {
-                        beforeZoom: function(/*start, end*/) {                  // called before zoom, return false to prevent zoom
-                            return true;
-                        }
-                        ,afterZoom: function(/*start, end*/) {                   // called after zoom
-                        }
-                    }
-                }
-            }
-        }
+        , options : { scales : {} }
     };
-
-
+    
     let stacked = false;
     let max = data_definition.max;
     let min = data_definition.min;
+
+    const palette = get_palette(data_definition.palette);
 
     if(data_definition.type)
     {
@@ -174,10 +161,10 @@ module.exports = function(data_definition)
             ,'time': {
                 'unit': unit
                 ,'displayFormats': {
-                    'millisecond': 'h:mm:ss.SSS a'
-                    ,'second': 'h:mm:ss a'
-                    ,'minute': 'h:mm a'
-                    ,'hour': 'hA'
+                    'millisecond': 'h:mm:ss.SSS'
+                    ,'second': 'h:mm:ss'
+                    ,'minute': 'h:mm'
+                    ,'hour': 'h'
                     ,'day': 'MMM d yyyy'
                     ,'week': 'll'
                     ,'month': 'MMM yyyy'
@@ -206,19 +193,48 @@ module.exports = function(data_definition)
     {
         const ds = JSON.parse(JSON.stringify(default_dataset));
 
+        const min = (undefined === serie.min)?undefined:Number.parseFloat(serie.min);
+        const max = (undefined === serie.max)?undefined:Number.parseFloat(serie.max);
+
         if('right' === serie.position)
         {
             if(undefined === chart.options.scales[Y1])
             {
-                chart.options.scales[Y1] = {position: 'right', grid : { display : false }};
+                chart.options.scales[Y1] = {position: 'right', grid : { display : false }, min, max, ticks : {
+                    callback : function(value/*, index, ticks*/){
+                        return value.toString();
+                    }
+                }};
             }
 
             ds.yAxisID = Y1;
         }
 
-            
-        ds.backgroundColor = colors[idx];
-        ds.borderColor = borders[idx++];
+        if('left1' === serie.position)
+        {
+            if(undefined === chart.options.scales[L1])
+            {
+                chart.options.scales[L1] = {position: 'left', grid : { display : false }, min, max};
+            }
+
+            ds.yAxisID = L1;
+        }
+
+        if('right1' === serie.position)
+        {
+            if(undefined === chart.options.scales[R1])
+            {
+                chart.options.scales[R1] = {position: 'right', grid : { display : false }, min, max};
+            }
+
+            ds.yAxisID = R1;
+        }
+
+        ////////////////////////////////
+        /// COLORS
+        ////////////////////////////////
+        ds.backgroundColor = roll(palette.colors, idx);
+        ds.borderColor = roll((undefined === palette.borders)?palette.colors:palette.borders, idx++);
 
         if(serie.chart)
         {
@@ -243,10 +259,16 @@ module.exports = function(data_definition)
     }
     //}
 
+    let templates = ['basic' 
+        , 'crosshair'
+    ];
+
     if(data_definition.template)
     {
-        chart = template(chart, data_definition.template);
+        templates = data_definition.template;
     }
+
+    chart = template(chart, templates);
 
     return chart;
 

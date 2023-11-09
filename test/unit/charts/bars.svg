@@ -10,8 +10,7 @@
 <clipPath id="clip-8" fill-rule="nonzero" ><path d="M 431.06,286.7 L 431.06,371.1 523.94,371.1 523.94,286.7 Z" /></clipPath>
 <clipPath id="clip-9" fill-rule="nonzero" ><path d="M 560.06,337.64 L 560.06,371.1 652.94,371.1 652.94,337.64 Z" /></clipPath>
 <clipPath id="clip-10" fill-rule="nonzero" ><path d="M 689.06,320.66 L 689.06,371.1 781.94,371.1 781.94,320.66 Z" /></clipPath></defs>
-<g stroke="none" fill="white" fill-rule="nonzero" fill-opacity="1" >
-<rect x="0" y="0" width="800" height="400" transform="matrix(1 0 0 1 0 0)" /></g>
+
 <g stroke="rgb(0,0,0)" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="0.1" fill="none">
 <path d="M 27,371.5 L 800,371.5" />
 </g>
