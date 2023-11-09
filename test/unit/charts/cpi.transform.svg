@@ -589,6 +589,6 @@
 <g stroke="none" fill="rgb(33,150,243)" fill-rule="nonzero" fill-opacity="0.2"  clip-path="url(#clip-37)" >
 <path d="M 729.779428,217.175937 L 729.779428,371.1 777.79405,371.1 777.79405,217.175937 Z" />
 </g>
-<g stroke="Gray" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="1" fill="none">
+<g stroke="Gray" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="1" fill="none">
 <rect x="39" y="82.94000000000001" width="752" height="1" transform="matrix(1 0 0 1 0 0)" /></g>
 </svg>

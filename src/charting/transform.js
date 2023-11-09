@@ -224,7 +224,7 @@ module.exports = function(data_definition)
         {
             if(undefined === chart.options.scales[R1])
             {
-                chart.options.scales[L1] = {position: 'right', grid : { display : false }, min, max};
+                chart.options.scales[R1] = {position: 'right', grid : { display : false }, min, max};
             }
 
             ds.yAxisID = R1;

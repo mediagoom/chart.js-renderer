@@ -346,6 +346,6 @@
 <g stroke="none" fill="rgb(33,150,243)" fill-rule="nonzero" fill-opacity="0.2"  clip-path="url(#clip-17)" >
 <path d="M 249.078444,350.134154 L 249.078444,366.942769 510,366.942769 510,350.134154 Z" />
 </g>
-<g stroke="Gray" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="1" fill="none">
+<g stroke="Gray" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="1" fill="none">
 <rect x="524.225" y="33" width="1" height="338.6" transform="matrix(1 0 0 1 0 0)" /></g>
 </svg>

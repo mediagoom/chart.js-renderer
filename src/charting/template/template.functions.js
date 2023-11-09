@@ -1,5 +1,6 @@
 const trace = require('../../core/trace')('XBRL:CHARTING:TEMPLATE:FUNCTION', true);
 
+const aggregate = require('../aggregate.functions');
 
 module.exports = {
     'recession' : function(/*data, args*/)
@@ -57,6 +58,51 @@ module.exports = {
             }
         }
         ];
+
+    }
+    , 'fibonacci' : function(data, args)
+    {
+        const point = aggregate.min_max(data, args);
+
+        let min = Infinity;
+        let max = 0;
+
+        for(let idx = 0; idx < point.length; idx++)
+        {
+            const y = Number.parseFloat(point[idx].y);
+
+            if(y < min)
+                min = y;
+
+            if(y > max)
+                max = y;
+        }
+
+        const half = min + ((max - min) / 2);
+        const ff = ((max - min) * .382);
+
+        const color = 'rgba(70, 101, 145, 0.4)';
+        const dash = [4, 8];
+        const line = 1.5;
+
+
+        return [{ 'kind' : 'rectangle' 
+            ,'options' : [
+                {'startY' : max, color, dash, line, label : Math.round(max), labelStyle : 'bottom-right'}
+                , {'startY' : max - ff, color, dash, line, label: Math.round(max - ff)}
+                , {'startY': half, color, dash, line , label: Math.round(half)}
+                , {'startY' : min + ff, color, dash, line, label: Math.round(min + ff), labelStyle : 'bottom-right'}
+                , {'startY' : min, color, dash, line, label: Math.round(min)}
+                
+                
+                
+                
+            ]
+            
+        }
+        
+        ];
+
 
     }
 };
