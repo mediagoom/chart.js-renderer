@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-const render = require('./bin/lib').render.default;
-const chartjs = require('chart.js');
-const date_adapter = require('chartjs-adapter-date-fns');
+const adapter = require('./src/draw.adapter');
+const gauge = require('./src/charting/gauge');
+
 //module.exports = render.render.default
 
 function getInput() {
