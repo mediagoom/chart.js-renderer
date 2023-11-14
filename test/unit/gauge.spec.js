@@ -63,8 +63,6 @@ ${j}]<< ${b[j]}
 
             });
 
-
-
         }
 
     });
@@ -74,7 +72,7 @@ describe('Render Gouge js', function(){
 
     this.timeout(10000);
 
-    lookup_tests('gauge', undefined, adapter, gauge.draw, 800, 400);
+    lookup_tests('gauge', undefined, adapter, gauge.draw, 400, 800);
 
     
 });

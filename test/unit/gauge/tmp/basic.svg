@@ -1,54 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="800px" height="400px" viewBox="0 0 800 400">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="400px" height="800px" viewBox="0 0 400 800">
 <defs>
 </defs>
 
 <g stroke="none" fill="Blue" fill-rule="nonzero" fill-opacity="1" >
-<path d="M 651.703197,210.042821 C 689.29952,262.337595 709.674093,325.044081 709.996125,389.450006 L 400,391" />
+<path d="M 289.314038,726.789388 C 302.654668,745.345598 309.884355,767.596287 309.998625,790.450002 L 200,791" />
 </g>
 <g stroke="none" fill="Green" fill-rule="nonzero" fill-opacity="1" >
-<path d="M 497.268202,96.65514 C 558.422364,116.863936 611.763687,155.618676 649.88107,207.534878 L 400,391" />
+<path d="M 234.514523,686.55505 C 256.214387,693.725913 275.141954,707.477595 288.667476,725.899473 L 200,791" />
 </g>
 <g stroke="none" fill="Gray" fill-rule="nonzero" fill-opacity="1" >
-<path d="M 305.680061,95.697191 C 367.033249,76.100936 432.966751,76.100936 494.319939,95.697191 L 400,391" />
+<path d="M 166.531634,686.215132 C 188.302121,679.261623 211.697879,679.261623 233.468366,686.215132 L 200,791" />
 </g>
 <g stroke="none" fill="Yellow" fill-rule="nonzero" fill-opacity="1" >
-<path d="M 150.11893,207.534878 C 188.236313,155.618676 241.577636,116.863936 302.731798,96.65514 L 400,391" />
+<path d="M 111.332524,725.899473 C 124.858046,707.477595 143.785613,693.725913 165.485477,686.55505 L 200,791" />
 </g>
 <g stroke="none" fill="Red" fill-rule="nonzero" fill-opacity="1" >
-<path d="M 90.003875,389.450006 C 90.325907,325.044081 110.70048,262.337595 148.296803,210.042821 L 400,391" />
+<path d="M 90.001375,790.450002 C 90.115645,767.596287 97.345332,745.345598 110.685962,726.789388 L 200,791" />
 </g>
 <g stroke="none" fill="white" fill-rule="nonzero" fill-opacity="1" >
-<path d="M 245,391 C 245,305.395864 314.395864,236 400,236 485.604136,236 555,305.395864 555,391" />
+<path d="M 145,791 C 145,760.624339 169.624339,736 200,736 230.375661,736 255,760.624339 255,791" />
 </g>
 <g stroke="#ccc" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="1" fill="none">
-<path d="M 245,391 C 245,305.395864 314.395864,236 400,236 485.604136,236 555,305.395864 555,391" />
+<path d="M 145,791 C 145,760.624339 169.624339,736 200,736 230.375661,736 255,760.624339 255,791" />
 </g>
 <g stroke="none" fill="#000" fill-rule="nonzero" fill-opacity="1" >
 <text style="font:12px Arial;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 0 0)" 
-><tspan x="759.9955000093751" y="392.67499302084195">Extremely</tspan></text></g>
+><tspan x="352.41435306359926" y="749.9251876981298">Extremely</tspan></text></g>
 <g stroke="none" fill="#000" fill-rule="nonzero" fill-opacity="1" >
 <text style="font:12px Arial;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 0 0)" 
-><tspan x="759.9955000093751" y="417.67499302084195">Oversold</tspan></text></g>
+><tspan x="352.41435306359926" y="774.9251876981298">Oversold</tspan></text></g>
 <g stroke="none" fill="#000" fill-rule="nonzero" fill-opacity="1" >
 <text style="font:12px Arial;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 0 0)" 
-><tspan x="672.0018415593449" y="195.44949964695823">Oversold</tspan></text></g>
+><tspan x="279.8961013697826" y="682.1808243648693">Oversold</tspan></text></g>
 <g stroke="none" fill="#000" fill-rule="nonzero" fill-opacity="1" >
 <text style="font:12px Arial;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 0 0)" 
-><tspan x="497.26820227590025" y="72.91765089088818">Neutral</tspan></text></g>
+><tspan x="200.54999770833618" y="656.0016874964844">Neutral</tspan></text></g>
 <g stroke="none" fill="#000" fill-rule="nonzero" fill-opacity="1" >
 <text style="font:12px Arial;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 0 0)" 
-><tspan x="298.0736139175814" y="71.88244827308898">Overbought</tspan></text></g>
+><tspan x="121.19606702190855" y="681.3873175805625">Overbought</tspan></text></g>
 <g stroke="none" fill="#000" fill-rule="nonzero" fill-opacity="1" >
 <text style="font:12px Arial;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 0 0)" 
-><tspan x="109.81553163965162" y="192.73930400831708">Extremely</tspan></text></g>
+><tspan x="48.080072067289905" y="748.6412667508175">Extremely</tspan></text></g>
 <g stroke="none" fill="#000" fill-rule="nonzero" fill-opacity="1" >
 <text style="font:12px Arial;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 0 0)" 
-><tspan x="109.81553163965162" y="217.73930400831708">Overbought</tspan></text></g>
+><tspan x="48.080072067289905" y="773.6412667508175">Overbought</tspan></text></g>
 <g stroke="red" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="1" fill="none">
-<path d="M 400,391 L 492.705098,105.683045" />
+<path d="M 200,791 L 230.901699,695.894348" />
 </g>
 <g stroke="none" fill="red" fill-rule="nonzero" fill-opacity="1" >
-<path d="M 405,391 C 405,393.761424 402.761424,396 400,396 397.238576,396 395,393.761424 395,391 395,388.238576 397.238576,386 400,386
-402.761424,386 405,388.238576 405,391" />
+<path d="M 205,791 C 205,793.761424 202.761424,796 200,796 197.238576,796 195,793.761424 195,791 195,788.238576 197.238576,786 200,786
+202.761424,786 205,788.238576 205,791" />
 </g>
 </svg>

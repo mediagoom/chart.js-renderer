@@ -1,5 +1,5 @@
 const assert = require('assert');
-
+const arcWrite = require('./gauge.write')
 
 
 function draw(ctx, options, width, height)
@@ -94,12 +94,14 @@ for (let i = arcs.length - 1; i >= 0; i--) {
     const arc = arcs[i];
 
     const offset = Math.abs(i - mov);
-    const labelAngle = border + ( 1 + arc.end) * Math.PI;
-    const x = centerX + (radius + (outside * offset)) * Math.cos(labelAngle);
+    const labelAngle = border + ( 1 + (arc.start + (arc.end - arc.start) / 2)) * Math.PI;
+    const x = centerX + (radius + (outside  * offset))  * Math.cos(labelAngle);
     const y = centerY + (radius + outside) * Math.sin(labelAngle);
     const txt = arc.label.split('-');
     for(let j = 0; j < txt.length; j++)
-        ctx.fillText(txt[j], x, y + j * 25);
+        ctx.fillText(txt[j], x, y + j * outside);
+    
+    //arcWrite(ctx, centerX, centerY, radius, (1 +arc.start) * Math.PI, (1 + arc.end), arc.color, arc.label, true);
 }
 
 
@@ -121,4 +123,4 @@ ctx.fillStyle = 'red';
 ctx.fill();
 }
 
-module.exports = { draw }
+module.exports = { draw, arcWrite }
