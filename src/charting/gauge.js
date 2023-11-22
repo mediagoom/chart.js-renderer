@@ -97,7 +97,7 @@ ctx.lineWidth = 2;
 ctx.stroke();
 
 // Draw the speed labels
-const outside = 15;
+const outside = 20;
 //let angleInRadians = (Math.PI / 2);
 ctx.font = font;
 ctx.fillStyle = '#000';
@@ -120,8 +120,9 @@ for (let i = arcs.length - 1; i >= 0; i--) {
         const text = txt[j];
         const sign = (middle_angle < .5)?-1:1;
         const distancer =  (middle_angle - .5 ) * outside;
-        const y_distancer = symmetricGrowth(middle_angle) * outside;
-        const t_mesure = (ctx.measureText(text).width / 2  ) * sign;
+        //const distancer =  (middle_angle - .5 ) * outside / symmetricDecrease(middle_angle);
+        const y_distancer = symmetricGrowth(middle_angle) / 1.5 * outside;
+        const t_mesure = (0 === distancer)?0:(ctx.measureText(text).width / 2  ) * sign;
         ctx.fillText(text, x + t_mesure + distancer, y + (j * font_size ) - y_distancer);
     }
         

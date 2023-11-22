@@ -25,29 +25,29 @@
 </g>
 <g stroke="none" fill="#000" fill-rule="nonzero" fill-opacity="1" >
 <text style="font:12px Arial;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 0 0)" 
-><tspan x="352.41435306359926" y="749.9251876981298">Extremely</tspan></text></g>
+><tspan x="339.6162167924669" y="748.2813506562561">Extremely</tspan></text></g>
 <g stroke="none" fill="#000" fill-rule="nonzero" fill-opacity="1" >
 <text style="font:12px Arial;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 0 0)" 
-><tspan x="352.41435306359926" y="774.9251876981298">Oversold</tspan></text></g>
+><tspan x="336.6162167924669" y="760.2813506562561">Oversold</tspan></text></g>
 <g stroke="none" fill="#000" fill-rule="nonzero" fill-opacity="1" >
 <text style="font:12px Arial;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 0 0)" 
-><tspan x="279.8961013697826" y="682.1808243648693">Oversold</tspan></text></g>
+><tspan x="292.65637775217203" y="689.9480173229229">Oversold</tspan></text></g>
 <g stroke="none" fill="#000" fill-rule="nonzero" fill-opacity="1" >
 <text style="font:12px Arial;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 0 0)" 
-><tspan x="200.54999770833618" y="656.0016874964844">Neutral</tspan></text></g>
+><tspan x="199.99999999999997" y="667.6666666666666">Neutral</tspan></text></g>
 <g stroke="none" fill="#000" fill-rule="nonzero" fill-opacity="1" >
 <text style="font:12px Arial;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 0 0)" 
-><tspan x="121.19606702190855" y="681.3873175805625">Overbought</tspan></text></g>
+><tspan x="101.34362224782794" y="689.9480173229229">Overbought</tspan></text></g>
 <g stroke="none" fill="#000" fill-rule="nonzero" fill-opacity="1" >
 <text style="font:12px Arial;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 0 0)" 
-><tspan x="48.080072067289905" y="748.6412667508175">Extremely</tspan></text></g>
+><tspan x="60.383783207533114" y="748.2813506562561">Extremely</tspan></text></g>
 <g stroke="none" fill="#000" fill-rule="nonzero" fill-opacity="1" >
 <text style="font:12px Arial;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 0 0)" 
-><tspan x="48.080072067289905" y="773.6412667508175">Overbought</tspan></text></g>
-<g stroke="red" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="1" fill="none">
+><tspan x="57.383783207533114" y="760.2813506562561">Overbought</tspan></text></g>
+<g stroke="black" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="1" fill="none">
 <path d="M 200,791 L 230.901699,695.894348" />
 </g>
-<g stroke="none" fill="red" fill-rule="nonzero" fill-opacity="1" >
+<g stroke="none" fill="black" fill-rule="nonzero" fill-opacity="1" >
 <path d="M 205,791 C 205,793.761424 202.761424,796 200,796 197.238576,796 195,793.761424 195,791 195,788.238576 197.238576,786 200,786
 202.761424,786 205,788.238576 205,791" />
 </g>

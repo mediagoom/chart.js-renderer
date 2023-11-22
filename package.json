@@ -30,8 +30,8 @@
   },
   "homepage": "https://github.com/mediagoom/chart.js-renderer#readme",
   "devDependencies": {
+    "browser-sync": "^2.29.3",
     "chai": "^4.3.6",
-   
     "chartjs-adapter-date-fns": "^2.0.1",
     "date-fns": "^2.28.0",
     "eslint": "^8.16.0",
@@ -40,6 +40,6 @@
     "nyc": "^15.1.0"
   },
   "dependencies": {
-   "chart.js": "^4.2.1" 
+    "chart.js": "^4.2.1"
   }
 }
