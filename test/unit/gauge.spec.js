@@ -5,7 +5,7 @@ const expect   = require('chai').expect;
 const adapter = require('../../src/draw.adapter');
 const gauge = require('../../src/charting/gauge');
 
-function lookup_tests(dir_name, transform, render, target_function, height, width)
+function lookup_tests(dir_name, transform, render, target_function, width, height)
 {
     const charts_dir = path.join(__dirname, `./${dir_name}`)
     const ls = fs.readdirSync(charts_dir);
@@ -43,7 +43,7 @@ function lookup_tests(dir_name, transform, render, target_function, height, widt
 
                     //opts.options.datasets = {line : { pointStyle : 'line' , fill: true } };
 
-                    const svg = render(target_function, opts, height, width);
+                    const svg = render(target_function, opts, width, height);
 
                     fs.writeFileSync(path.join(__dirname, `./${dir_name}/tmp/${name}.svg`), svg);
 
@@ -72,7 +72,7 @@ describe('Render Gouge js', function(){
 
     this.timeout(10000);
 
-    lookup_tests('gauge', undefined, adapter, gauge.draw, 400, 800);
+    lookup_tests('gauge', undefined, adapter, gauge.draw, 400, 200);
 
     
 });

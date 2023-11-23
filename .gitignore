@@ -5,3 +5,4 @@ scoverage.lcov
 coverage/
 .nyc_output/
 *.tar.gz
+tmp/
