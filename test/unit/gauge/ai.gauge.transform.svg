@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="400px" height="200px" viewBox="0 0 400 200">
+<defs>
+</defs>
+
+<g stroke="none" fill="rgb(70,101,145)" fill-rule="nonzero" fill-opacity="0.2" >
+<path d="M 265.100527,102.332524 C 293.171024,122.942156 309.824506,155.626455 309.998625,190.450002 L 200,191" />
+</g>
+<g stroke="none" fill="rgb(70,101,145)" fill-rule="nonzero" fill-opacity="0.2" >
+<path d="M 234.514523,86.55505 C 245.12428,90.061114 255.137888,95.163302 264.210612,101.685962 L 200,191" />
+</g>
+<g stroke="none" fill="rgb(70,101,145)" fill-rule="nonzero" fill-opacity="0.1" >
+<path d="M 166.531634,86.215132 C 188.302121,79.261623 211.697879,79.261623 233.468366,86.215132 L 200,191" />
+</g>
+<g stroke="none" fill="rgb(70,101,145)" fill-rule="nonzero" fill-opacity="0.9" >
+<path d="M 135.789388,101.685962 C 144.862112,95.163302 154.87572,90.061114 165.485477,86.55505 L 200,191" />
+</g>
+<g stroke="none" fill="#589E79" fill-rule="nonzero" fill-opacity="1" >
+<path d="M 90.001375,190.450002 C 90.175494,155.626455 106.828976,122.942156 134.899473,102.332524 L 200,191" />
+</g>
+<g stroke="none" fill="white" fill-rule="nonzero" fill-opacity="1" >
+<path d="M 145,191 C 145,160.624339 169.624339,136 200,136 230.375661,136 255,160.624339 255,191" />
+</g>
+<g stroke="#ccc" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="1" fill="none">
+<path d="M 145,191 C 145,160.624339 169.624339,136 200,136 230.375661,136 255,160.624339 255,191" />
+</g>
+<g stroke="none" fill="#000" fill-rule="nonzero" fill-opacity="1" >
+<text style="font:12px Arial;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 0 0)" 
+><tspan x="332.01071766072045" y="131.36777503038618">Extremely</tspan></text></g>
+<g stroke="none" fill="#000" fill-rule="nonzero" fill-opacity="1" >
+<text style="font:12px Arial;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 0 0)" 
+><tspan x="335.01071766072045" y="143.36777503038618">Overvalued</tspan></text></g>
+<g stroke="none" fill="#000" fill-rule="nonzero" fill-opacity="1" >
+<text style="font:12px Arial;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 0 0)" 
+><tspan x="282.93895497135014" y="80.38257217802372">Overvalued</tspan></text></g>
+<g stroke="none" fill="#000" fill-rule="nonzero" fill-opacity="1" >
+<text style="font:12px Arial;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 0 0)" 
+><tspan x="199.99999999999997" y="67.66666666666667">Fair valued</tspan></text></g>
+<g stroke="none" fill="#000" fill-rule="nonzero" fill-opacity="1" >
+<text style="font:12px Arial;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 0 0)" 
+><tspan x="114.06104502864983" y="80.38257217802375">Undervalued</tspan></text></g>
+<g stroke="none" fill="#000" fill-rule="nonzero" fill-opacity="1" >
+<text style="font:12px Arial;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 0 0)" 
+><tspan x="67.98928233927951" y="131.36777503038627">Extremely</tspan></text></g>
+<g stroke="none" fill="#000" fill-rule="nonzero" fill-opacity="1" >
+<text style="font:12px Arial;" text-anchor="middle" dominant-baseline="middle" transform="matrix(1 0 0 1 0 0)" 
+><tspan x="61.98928233927951" y="143.36777503038627">Undervalued</tspan></text></g>
+<g stroke="black" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-opacity="1" fill="none">
+<path d="M 200,191 L 248.329325,103.454147" />
+</g>
+<g stroke="none" fill="black" fill-rule="nonzero" fill-opacity="1" >
+<path d="M 205,191 C 205,193.761424 202.761424,196 200,196 197.238576,196 195,193.761424 195,191 195,188.238576 197.238576,186 200,186
+202.761424,186 205,188.238576 205,191" />
+</g>
+</svg>

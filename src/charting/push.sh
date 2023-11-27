@@ -8,7 +8,8 @@ FULL="$(readlink -e $D)"
 
 echo "$FULL"
 
-cp ./transform.js "$FULL" 
+cp ./transform.js "$FULL"
+cp ./gauge* "$FULL"  
 cp ./template "$FULL" -r
 
 cd -

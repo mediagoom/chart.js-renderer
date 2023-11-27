@@ -4,6 +4,7 @@ const expect   = require('chai').expect;
 
 const adapter = require('../../src/draw.adapter');
 const gauge = require('../../src/charting/gauge');
+const transform = require('../../src/charting/gauge.transform');
 
 function lookup_tests(dir_name, transform, render, target_function, width, height)
 {
@@ -72,7 +73,7 @@ describe('Render Gouge js', function(){
 
     this.timeout(10000);
 
-    lookup_tests('gauge', undefined, adapter, gauge.draw, 400, 200);
+    lookup_tests('gauge', transform, adapter, gauge.draw, 400, 200);
 
     
 });

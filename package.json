@@ -9,7 +9,8 @@
     "cov-test": "nyc npm test",
     "cov-html": "nyc report --reporter html",
     "cov-cobertura": "nyc report --reporter cobertura",
-    "cov-lcov": "nyc report --reporter lcov"
+    "cov-lcov": "nyc report --reporter lcov",
+    "server" : "browser-sync start --server './test/unit/gauge' -w --files='*.svg'"
   },
   "repository": {
     "type": "git",
