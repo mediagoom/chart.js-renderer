@@ -10,4 +10,10 @@ cp "$FULL/transform.js" ./
 cp "$FULL/gauge*"  ./
 cp "$FULL/template" ./ -r
 
+D="../../../XBRL/src/core"
+ls $D 
+FULL="$(readlink -e $D)"
+
+cp "$FULL/jsonmerge.js" ../core
+
 cd -
