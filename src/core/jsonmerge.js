@@ -2,6 +2,9 @@ const assert = require('assert');
 
 function assign(target, source, objs)
 {
+
+    assert(typeof target === 'object', `invalid type of target ${typeof target} - ${target}`);
+    assert(typeof source === 'object' && source !== null, `invalid type of target ${typeof source} - ${source}`);
     /*
     let recursive = false;
     objs.forEach(element => {
@@ -15,6 +18,8 @@ function assign(target, source, objs)
     objs.push(source);
     */
 
+
+
     Object.keys(source).forEach( property => {
 
         const val = source[property];
@@ -23,6 +28,14 @@ function assign(target, source, objs)
         if(val !== null && typeof val === 'object' && typeof t === 'object')
         {
             assign(t, val, objs);
+        }
+        else if(val !== null && typeof val === 'object' && typeof t !== 'object')
+        {
+            if(Array.isArray(val))
+                target[property] = [];
+            else
+                target[property] = {};
+            assign(target[property], val, objs);
         }
         else
         {
@@ -41,6 +54,7 @@ function merge(target, source)
 
     assert(a === 'object' && b === 'object');
 
+    //const ret = JSON.parse(JSON.stringify(target));
     const ret = {};
 
     const objs = [];

@@ -23,7 +23,7 @@
                 "999999",
                 "--colors",
                 "${file}"
-                , "-g", "sentiment.transform"
+                , "-g", "pecentage"
             ],
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen"

@@ -156,7 +156,7 @@ function resolve_template(template)
 function apply_template(object, template)
 {
     const t = resolve_template(template);
-    return merge(object, JSON.parse(JSON.stringify(t)));
+    return merge(object, t);
 }
 
 

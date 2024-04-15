@@ -1,0 +1,18 @@
+{
+    "value" : 0.60
+    , "border" : 0.005
+    , "arcs" : [
+        { "end" : 0.10, "label" : "Extremely-Overbought", "color" : "Red" }
+        , { "end" : 0.20, "label" : "Overbought", "color" : "Yellow" }
+        , { "end" : 0.30, "label" : "Neutral", "color" : "Gray" }
+        , { "end" : 0.40, "label" : "Oversold", "color" : "Green" }
+        , { "end" : 0.5, "label" : "Extremely-Oversold", "color" : "Blue" }
+
+        , { "end" : 0.60, "label" : "Overbought", "color" : "Yellow" }
+        , { "end" : 0.70, "label" : "Neutral", "color" : "Gray" }
+        , { "end" : 0.80, "label" : "Oversold", "color" : "Green" }
+        , { "end" : 0.90, "label" : "Oversold", "color" : "Green" }
+        , { "end" : 1, "label" : "Extremely-Oversold", "color" : "Blue" }
+    ]
+
+}

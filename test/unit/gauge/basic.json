@@ -1,0 +1,12 @@
+{
+    "value" : 0.60
+    , "border" : 0.005
+    , "arcs" : [
+        { "end" : 0.20, "label" : "Extremely-Oversold", "color" : "#006400" }
+        , { "end" : 0.40, "label" : "Oversold", "color" : "#EAFCEA" }
+        , { "end" : 0.60, "label" : "Neutral", "color" : "#E6F4F7" }
+        , { "end" : 0.80, "label" : "Oversold", "color" : "rgb(0, 72, 239)" }
+        , { "end" : 1, "label" : "Extremely-Oversold", "color" : "Red" }
+    ]
+
+}
