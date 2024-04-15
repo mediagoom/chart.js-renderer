@@ -29,7 +29,7 @@ function test()
 export DEBUG=*:warning,*:error
 mkdir -p ./coverage
 npm test -- --reporter json --reporter-option output=./coverage/$1.json || true
-tar -czvf ./charts.tar.gz ././test/unit/charts || true
+#tar -czvf ./charts.tar.gz ././test/unit/charts || true
 npm run cov-test
 npm run cov-lcov
 
@@ -40,9 +40,10 @@ npm i --legacy-peer-deps
 cd build/module; npm i; cd -
 npm run build
 mkdir -p ./test/unit/charts/tmp
+mkdir -p ./test/unit/gauge/tmp
 test "test-result"
 
 
-cp ./charts.tar.gz ./coverage || true
+#cp ./charts.tar.gz ./coverage || true
 tar -czvf ./coverage.tar.gz ./coverage || true
 date || true
