@@ -1,11 +1,12 @@
 import { SvgCanvas,
          Rect2D,
          SvgCanvas2DGradient } from 'red-agate-svg-canvas/modules';
+import svg2img from 'svg2img';
 
 // tslint:disable-next-line:function-constructor
 const g = Function('return this')();
 
-export default function(ChartJs, opts, width, height)
+export default async function(ChartJs, opts, width, height, format)
 {
     if(undefined === width)
             width = 800;

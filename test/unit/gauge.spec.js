@@ -24,7 +24,7 @@ function lookup_tests(dir_name, transform, render, target_function, width, heigh
             const file = path.join(charts_dir, dir);
             const name = (js)?dir.replace(rx, ''):dir.replace(xr, '');
             
-            it(`should render ${name} for ${dir_name}`, ()=>{
+            it(`should render ${name} for ${dir_name}`, async ()=>{
 
                     //console.log(name, file, charts_dir);
                     if(js)
@@ -44,7 +44,7 @@ function lookup_tests(dir_name, transform, render, target_function, width, heigh
 
                     //opts.options.datasets = {line : { pointStyle : 'line' , fill: true } };
 
-                    const svg = render(target_function, opts, width, height);
+                    const svg = await render(target_function, opts, width, height);
 
                     fs.writeFileSync(path.join(__dirname, `./${dir_name}/tmp/${name}.svg`), svg);
 

@@ -44,6 +44,9 @@ module.exports = function (env) {
                     options: {
                     }
                 },
+            }, {
+                test: /\.node$/,
+                use: 'node-loader',
             }]
         },
         plugins: [],

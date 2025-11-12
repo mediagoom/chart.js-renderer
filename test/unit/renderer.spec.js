@@ -30,7 +30,7 @@ describe('Render Chart js', function(){
             const file = path.join(charts_dir, dir);
             const name = (js)?dir.replace(rx, ''):dir.replace(xr, '');
             
-            it(`should render ${name}`, ()=>{
+            it(`should render ${name}`, async ()=>{
 
                     //console.log(name, file, charts_dir);
                     if(js)
@@ -50,7 +50,7 @@ describe('Render Chart js', function(){
 
                     //opts.options.datasets = {line : { pointStyle : 'line' , fill: true } };
 
-                    const svg = render(chartjs, opts);
+                    const svg = await render(chartjs, opts);
 
                     fs.writeFileSync(path.join(__dirname, `./charts/tmp/${name}.svg`), svg);
 

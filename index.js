@@ -24,23 +24,31 @@ function getInput() {
 
 async function main(args)
 {
+    let w = 800;
+    let h = 400;
+    let format = 'svg';
 
-
-    let w = args[2];
-    let h = args[3];
-
-    //console.log('size', w, h);
+    // Basic argument parsing
+    for (let i = 2; i < args.length; i++) {
+        if (args[i] === '--width') {
+            w = parseInt(args[++i], 10);
+        } else if (args[i] === '--height') {
+            h = parseInt(args[++i], 10);
+        } else if (args[i] === '--format') {
+            format = args[++i];
+        }
+    }
 
     const input = await getInput();
+    const options = JSON.parse(input);
 
-    const options = JSON.parse(input)
+    const output = await render(chartjs, options, w, h, format);
 
-    const svg = render(chartjs, options, w, h);
-
-
-    console.log(svg);
-
-
+    if (format === 'png') {
+        process.stdout.write(output);
+    } else {
+        console.log(output);
+    }
 }
 
 //console.log(process);
