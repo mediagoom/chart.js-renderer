@@ -2,7 +2,7 @@ const opt = {
   "type": "line",
   "data": {
     "datasets": [
-      {
+     {
         "fill": false,
         "label": "sp 500",
         "data": [
@@ -127,7 +127,7 @@ const opt = {
             "y": 5235.48
           }
         ],
-        "backgroundColor": "rgba(70, 101, 145, 0.9)",
+        "backgroundColor": "rgba(70,101,145, 0.9)",
         "borderColor": "rgba(70, 101, 145, 0.9)",
         "borderWidth": 2,
         "borderDash": [
@@ -261,7 +261,7 @@ const opt = {
             "y": 4819
           }
         ],
-        "backgroundColor": "#F1DE40",
+        "backgroundColor": "rgba(241, 222, 64, 1)",
         "borderColor": "#F1DE40",
         "borderWidth": 3,
         "gauge": "target"
@@ -391,7 +391,7 @@ const opt = {
             "y": 4578.05
           }
         ],
-        "backgroundColor": "#c3dfec",
+        "backgroundColor": "rgba(195,223,236, 1)",
         "borderColor": "#c3dfec",
         "borderWidth": 1
       },
@@ -520,7 +520,7 @@ const opt = {
             "y": 4096.15
           }
         ],
-        "backgroundColor": "#d6f7df",
+        "backgroundColor": "rgba(214,247,223, 1)",
         "borderColor": "#d6f7df",
         "borderWidth": 1,
         "gauge": "Under-valued"
@@ -650,11 +650,14 @@ const opt = {
             "y": 3614.25
           }
         ],
-        "backgroundColor": "#31cb5a",
+        "backgroundColor": "rgba(49,203,90, 1)",
         "borderColor": "#31cb5a",
         "borderWidth": 1,
         "gauge": "Extremely-Under-valued"
       },
+      
+      
+      
       {
         "fill": 1,
         "label": "ai-20y 2024 Q4 +5%",
@@ -780,7 +783,7 @@ const opt = {
             "y": 5059.95
           }
         ],
-        "backgroundColor": "#c3dfec",
+        "backgroundColor": "rgba(195,223,236, 1)",
         "borderColor": "#c3dfec",
         "borderWidth": 1,
         "gauge": "Fairly-valued"
@@ -910,7 +913,7 @@ const opt = {
             "y": 5541.849999999999
           }
         ],
-        "backgroundColor": "#ee7f81",
+        "backgroundColor": "rgba(238,127,129, 1)",
         "borderColor": "#ee7f81",
         "borderWidth": 1,
         "gauge": "Over-valued"
@@ -1040,7 +1043,7 @@ const opt = {
             "y": 6023.75
           }
         ],
-        "backgroundColor": "#ed3b3b",
+        "backgroundColor": "rgba(237,59,59, 1)",
         "borderColor": "#ed3b3b",
         "borderWidth": 1,
         "gauge": "Extremely-Over-valued"
@@ -1120,12 +1123,94 @@ const opt = {
   ]
 };
 
-opt.data.datasets[4].backgroundColor = (context, options) => {
-                    const ctx = context.chart.ctx;
-                    const gradient = ctx.createLinearGradient(0, 0, 0, 250);
-                    gradient.addColorStop(0, "rgba(91,56,237,0.45)");
-                    gradient.addColorStop(1, "rgba(91,56,237,0.0)");
-                    return gradient;
-                }, //background gradient color
+function dsMinMax(dataset, min, max)
+{
+    let dmin = max;
+    let dmax = min;
+
+     dataset.forEach(e => {
+        if(e.y < dmin)
+            dmin = e.y;
+
+        if(e.y > dmax)
+            dmax = e.y;
+    });
+
+    return {dmin, dmax};
+}
+
+function bg(context, options, color){
+
+    const chartArea = context.chart.chartArea;
+    if (!chartArea) {
+        // This case happens on initial chart load
+        return;
+    }
+    
+    if(context.type === 'data')
+    {
+        return "rgba(154, 154, 154,0.95)";
+    }
+    
+    const index = context.datasetIndex;
+    //const dataset = context.dataset.data;
+    const y = context.chart.scales.y;
+    const x = context.chart.scales.x;
+    const min = y.min;
+    const max = y.max;
+    const range = max - min;
+    const chart_range = y.height;
+
+    //if(context.chart.config.data.datasets.length <= (index + 1))
+    if(0 === index)
+    {
+        //last dataset
+        return `rgba(${color},0)`
+    }
+
+    const m0 = dsMinMax(context.chart.config.data.datasets[index-1].data, min, max);
+    const m1 = dsMinMax(context.chart.config.data.datasets[index].data, min, max);
+   
+
+    const h = (max - m1.dmax) / range * chart_range;
+    const t = (max - m0.dmin) / range * chart_range; 
+
+    const ctx = context.chart.ctx;
+    //const gradient = ctx.createLinearGradient(0, 0, 0, ctx.canvas.height);
+    //const gradient = ctx.createLinearGradient(0, chartArea.top, 0, chartArea.top + chartArea.height);
+
+    const gradient = ctx.createLinearGradient(0, y.top + h , 0, y.top + t);
+
+        
+            gradient.addColorStop(0, `rgba(${color},0.1)`);
+            gradient.addColorStop(0.5, `rgba(${color},85,0.45)`);
+            gradient.addColorStop(1, `rgba(${color},0.90)`);
+
+            //gradient.addColorStop(0, `rgba(${p_color},0.90)`);
+            //gradient.addColorStop(1, `rgba(${color},0.90)`);
+                        
+    
+            return gradient;
+   
+    
+
+} //background gradient color
+
+/*
+opt.data.datasets[0].backgroundColor = (context, options) => { return bg(context, options, '102, 141, 67')};//green
+opt.data.datasets[1].backgroundColor = (context, options) => { return bg(context, options, '230, 109, 71')};//orange
+opt.data.datasets[2].backgroundColor = (context, options) => { return bg(context, options, '105, 36, 148')};//violet
+*/
+
+opt.data.datasets.forEach(e => {
+    const c = e.backgroundColor;
+    const rx = /rgba\((\d+),(\d+),(\d+)/;
+
+    if(rx.test(c))
+    {
+        const m = rx.exec(c);
+        e.backgroundColor = (context, options) => { return bg(context, options, `${m[1]},${m[2]},${m[3]}`)};
+    }
+});
 
 module.exports = opt;

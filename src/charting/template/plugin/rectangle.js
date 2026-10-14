@@ -33,6 +33,20 @@ function rec(chart, opt_orig, option)
     if(opt.startX !== 0)
         xv = x.getPixelForValue(opt.startX);
 
+    if(opt.endY !== 0){
+        let end = y.getPixelForValue(opt.endY)
+
+        if(end >= bottom)
+            end = bottom;
+
+        h = Math.abs(yv - end);
+    }
+        
+
+    if(yv >= bottom)
+        return;
+
+
     //if(options.endY !== 0)
 
     trace.info('rectangle', yv, opt.startY, xv, opt.startX);
@@ -49,6 +63,15 @@ function rec(chart, opt_orig, option)
     ctx.strokeRect(xv, yv
         , w
         , h);
+
+    if(opt.fill){
+        const fill = ctx.fillStyle;
+        ctx.fillStyle = opt.color;
+        ctx.fillRect(xv, yv
+        , w
+        , h);
+        ctx.fillStyle = fill;
+    }
 
     if(opt.label)
     {
@@ -71,29 +94,39 @@ function rec(chart, opt_orig, option)
         ctx.fillText(opt.label, xl, yl);
     }
 
+    
+
 }
+
+function draw(chart, args, options, defaults) {
+ 
+    const ctx = chart.ctx;
+
+    ctx.save();
+
+    let opt = JSON.parse(JSON.stringify(defaults));
+
+    if(Array.isArray(options))
+        for(const option of options)
+            rec(chart, opt, option);
+    else
+        rec(chart, opt, options);
+
+
+    ctx.restore();
+}
+    
+
 
 const rectangle = {
     id: 'rectangle'
-    //beforeDraw(chart, args, options) {
+    , beforeDraw(chart, args, options) {
+        draw(chart, args, options, this.defaults);
+    }
     , afterDraw(chart, args, options) {
         
-
-        const ctx = chart.ctx;
-
-        ctx.save();
-
-        let opt = JSON.parse(JSON.stringify(this.defaults));
-
-        if(Array.isArray(options))
-            for(const option of options)
-                rec(chart, opt, option);
-        else
-            rec(chart, opt, options);
-
-
-        ctx.restore();
     }
+
     ,defaults: {
         color: 'Gray'
         , startX : 0
@@ -103,6 +136,7 @@ const rectangle = {
         , line: .5
         , dash : undefined
         , labelStyle : 'top-right'
+        
     }
 };
 

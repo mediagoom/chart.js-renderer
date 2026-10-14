@@ -6,8 +6,7 @@ const plugins = require('./plugin');
 const simple = {
     none : {}
     , '${template}' : {}
-    , '${template1}' : {}
-    , '${template2}' : {}
+, '${template1}' : {}, '${template2}' : {}, '${template3}' : {}, '${template4}' : {}, '${template5}' : {}, '${template6}' : {}
     , basic : {
         options : { scales : {}
             , elements: {
@@ -101,6 +100,14 @@ const simple = {
                 'master' : { 'balanceX' : {} }
             }
         }
+    }
+    , 'legend' : {
+        options : {
+            plugins: {
+                'master' : { 'htmlLegend' : {} },
+                legend: { display: false, }
+            }
+        }
     }, 'percentage' : {
         options : {
             scales : {
@@ -164,6 +171,9 @@ function apply_templates(object, templates)
 {
 
     let result = JSON.parse(JSON.stringify(object));
+
+    if(/\|/.test(templates.toString()))
+        templates = templates.toString().split('|');
 
     if(Array.isArray(templates))
     {

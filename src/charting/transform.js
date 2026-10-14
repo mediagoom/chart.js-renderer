@@ -1,7 +1,7 @@
 const assert = require('assert');
 const template = require('./template');
 
-
+//const VIOLET = 'rgba(136, 132, 216, 1)';
 
 const default_dataset = {
     fill: false
@@ -263,7 +263,7 @@ module.exports = function(data_definition)
         , 'crosshair'
     ];
 
-    if(data_definition.template)
+    if(data_definition.template && data_definition.template.toString() !== '${template}')
     {
         templates = data_definition.template;
     }

@@ -2,8 +2,9 @@ const assert = require('assert');
 const balanceX = require('./balanceX');
 const rectangle = require('./rectangle');
 const percentage = require('./percentage');
+const htmlLegend = require('./htmlLegend');
 
-const internal_plugin = { balanceX, rectangle, percentage};
+const internal_plugin = { balanceX, rectangle, percentage, htmlLegend};
 
 function call_plugins(event, chart, args, options)
 {
@@ -33,6 +34,9 @@ const master =
     , afterDataLimits(chart, args, options) {
           
         call_plugins('afterDataLimits', chart, args, options);
+    }
+    ,  afterUpdate(chart, args, options) {
+        call_plugins('afterUpdate', chart, args, options);
     }
 };
 
