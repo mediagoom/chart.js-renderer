@@ -11,7 +11,13 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm i --legacy-peer-deps;cd build/module; npm i; cd -;npm run build 
+RUN npm install --legacy-peer-deps \
+ && if [ ! -d build/module ]; then mkdir -p build/module; fi \
+ && cd build/module \
+ && npm install \
+ && cd - \
+ && npm run build
+
 
 # Copy the rest of the application code
 COPY . .
